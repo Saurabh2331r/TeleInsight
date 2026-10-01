@@ -1,0 +1,1001 @@
+CustomerID,Gender,Age,Region,Tenure,Plan,MonthlyCharges,TotalCharges,InternetService,Contract,PaymentMethod,NumPhoneLines,InternationalPlan,TechSupport,MonthlyCallMinutes,Complaints,Churn
+CU-0001,Male,34,Central,22,Standard,530.0,11612.48,DSL,Month-to-Month,Manual Bank Transfer,1,1,1,221,0,No
+CU-0002,Male,62,Central,14,Basic,336.3,4538.47,DSL,Month-to-Month,Credit Card,1,0,0,303,2,Yes
+CU-0003,Male,33,West,7,Premium 5G,936.1,6771.03,DSL,Month-to-Month,Credit Card,2,0,0,156,1,Yes
+CU-0004,Female,18,West,22,Business Pro,1278.73,27276.8,DSL,Month-to-Month,Mailed Check,2,0,0,96,2,Yes
+CU-0005,Male,32,East,6,Premium 5G,955.92,5796.29,No Internet,One Year,Mailed Check,3,0,0,228,0,No
+CU-0006,Female,55,East,20,Standard,625.89,12954.56,Fiber Optic,Month-to-Month,Credit Card,1,0,0,318,0,Yes
+CU-0007,Male,41,Central,18,Business Pro,1296.42,23126.43,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,256,1,Yes
+CU-0008,Female,34,East,10,Basic,308.19,3207.28,DSL,One Year,Auto Bank Transfer,3,1,0,221,1,No
+CU-0009,Male,29,East,10,Standard,596.33,5881.98,No Internet,Two Year,Credit Card,2,0,0,114,1,No
+CU-0010,Female,39,South,19,Standard,579.82,11118.7,DSL,Month-to-Month,Auto Bank Transfer,2,0,1,204,1,No
+CU-0011,Male,42,Central,47,Standard,543.23,26070.91,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,84,1,Yes
+CU-0012,Male,44,South,8,Premium 5G,958.89,7713.47,Fiber Optic,Month-to-Month,Mailed Check,4,0,1,64,0,Yes
+CU-0013,Male,49,North,25,Basic,286.78,7455.24,Fiber Optic,Month-to-Month,Credit Card,4,1,0,203,0,Yes
+CU-0014,Male,25,North,1,Standard,538.67,531.48,Fiber Optic,One Year,Mailed Check,2,0,0,232,0,Yes
+CU-0015,Female,41,East,14,Standard,589.96,8398.96,No Internet,Month-to-Month,Mailed Check,1,0,1,213,0,No
+CU-0016,Male,50,West,1,Business Pro,1316.1,1377.52,No Internet,Two Year,Manual Bank Transfer,1,0,0,152,1,Yes
+CU-0017,Female,50,South,23,Business Pro,1284.41,29595.58,No Internet,One Year,Auto Bank Transfer,1,0,0,321,0,No
+CU-0018,Female,49,Central,6,Basic,312.65,1791.63,No Internet,Month-to-Month,Credit Card,1,0,0,488,1,Yes
+CU-0019,Female,36,South,42,Standard,532.98,22434.95,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,227,0,Yes
+CU-0020,Female,18,North,13,Standard,600.84,7616.32,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,194,0,No
+CU-0021,Female,44,Central,33,Standard,586.29,19192.02,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,226,0,Yes
+CU-0022,Female,38,South,35,Premium 5G,907.09,31636.0,Fiber Optic,Month-to-Month,Credit Card,2,0,0,329,1,Yes
+CU-0023,Male,55,South,1,Standard,622.43,627.13,Fiber Optic,One Year,Auto Bank Transfer,3,1,1,303,2,Yes
+CU-0024,Female,45,North,26,Standard,593.98,15197.35,DSL,Month-to-Month,Credit Card,2,0,1,130,2,Yes
+CU-0025,Male,68,East,13,Standard,604.41,7732.24,No Internet,Two Year,Auto Bank Transfer,2,0,0,315,0,No
+CU-0026,Female,34,East,3,Basic,374.44,1162.32,DSL,Two Year,Manual Bank Transfer,4,0,1,255,0,Yes
+CU-0027,Male,21,Central,38,Premium 5G,879.03,33384.5,DSL,One Year,Auto Bank Transfer,2,0,1,201,4,No
+CU-0028,Female,35,Central,7,Standard,613.95,4461.12,DSL,Two Year,Auto Bank Transfer,2,0,0,198,1,No
+CU-0029,Female,31,Central,1,Standard,525.19,505.17,DSL,One Year,Auto Bank Transfer,2,0,0,29,1,Yes
+CU-0030,Male,42,East,61,Basic,345.5,20180.71,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,258,1,No
+CU-0031,Female,39,West,10,Basic,340.15,3363.49,DSL,Month-to-Month,Auto Bank Transfer,4,1,1,131,1,Yes
+CU-0032,Female,32,East,42,Business Pro,1348.83,57293.37,Fiber Optic,Two Year,Credit Card,2,0,0,147,1,No
+CU-0033,Male,18,East,45,Premium 5G,920.56,41072.34,DSL,Month-to-Month,Credit Card,2,0,1,288,2,Yes
+CU-0034,Male,37,North,72,Standard,544.15,39851.5,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,52,1,No
+CU-0035,Female,56,North,22,Standard,565.26,12789.73,Fiber Optic,One Year,Manual Bank Transfer,1,0,0,193,1,No
+CU-0036,Male,47,North,37,Standard,587.43,22522.5,No Internet,Month-to-Month,Mailed Check,3,1,0,317,0,Yes
+CU-0037,Female,57,East,2,Basic,283.09,546.47,DSL,One Year,Mailed Check,2,0,1,64,2,Yes
+CU-0038,Male,34,Central,1,Standard,577.79,569.47,No Internet,Month-to-Month,Credit Card,2,0,1,116,1,Yes
+CU-0039,Male,44,South,35,Standard,598.26,20022.68,DSL,Month-to-Month,Manual Bank Transfer,3,0,0,182,0,No
+CU-0040,Male,29,Central,5,Standard,611.48,2931.8,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,1,161,1,Yes
+CU-0041,Female,71,West,4,Basic,308.94,1253.79,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,291,0,Yes
+CU-0042,Female,36,North,3,Standard,564.14,1774.06,DSL,Month-to-Month,Mailed Check,3,0,1,146,1,Yes
+CU-0043,Female,70,East,44,Basic,375.48,16869.64,DSL,One Year,Mailed Check,1,0,0,309,1,No
+CU-0044,Male,18,South,20,Standard,541.19,11023.58,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,279,0,No
+CU-0045,Male,48,South,4,Premium 5G,972.22,3764.92,DSL,One Year,Credit Card,1,1,1,231,3,Yes
+CU-0046,Female,18,Central,22,Premium 5G,918.71,20643.71,No Internet,One Year,Auto Bank Transfer,2,0,0,208,1,No
+CU-0047,Female,45,East,24,Standard,534.32,13200.73,Fiber Optic,One Year,Manual Bank Transfer,2,1,1,57,2,No
+CU-0048,Female,48,North,3,Standard,560.67,1674.78,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,206,2,Yes
+CU-0049,Male,58,South,11,Basic,315.6,3397.98,Fiber Optic,Two Year,Mailed Check,2,0,0,208,3,Yes
+CU-0050,Female,58,South,2,Basic,280.47,580.04,No Internet,Month-to-Month,Auto Bank Transfer,4,1,0,233,2,Yes
+CU-0051,Male,61,South,39,Basic,305.68,11800.12,Fiber Optic,Two Year,Credit Card,1,0,1,124,1,No
+CU-0052,Female,41,Central,60,Standard,582.86,35434.15,DSL,One Year,Manual Bank Transfer,4,0,0,74,2,No
+CU-0053,Female,42,East,39,Standard,570.51,22527.96,DSL,Two Year,Manual Bank Transfer,1,1,0,178,1,No
+CU-0054,Female,37,Central,2,Premium 5G,898.95,1869.35,Fiber Optic,One Year,Manual Bank Transfer,1,0,1,199,0,Yes
+CU-0055,Female,42,North,39,Basic,340.8,12943.21,DSL,Month-to-Month,Credit Card,2,1,1,67,1,No
+CU-0056,Male,18,South,58,Standard,555.95,33293.41,DSL,Month-to-Month,Mailed Check,2,0,0,321,0,Yes
+CU-0057,Female,44,East,54,Premium 5G,915.77,47090.12,DSL,One Year,Auto Bank Transfer,1,0,1,101,0,No
+CU-0058,Male,34,East,42,Standard,608.66,25558.84,DSL,Month-to-Month,Credit Card,3,0,0,117,0,No
+CU-0059,Female,29,Central,27,Basic,369.59,9897.87,Fiber Optic,Month-to-Month,Mailed Check,1,1,0,247,0,Yes
+CU-0060,Male,20,West,31,Basic,331.3,10245.7,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,116,0,No
+CU-0061,Male,75,South,24,Standard,556.88,13166.7,Fiber Optic,One Year,Mailed Check,1,0,1,172,2,No
+CU-0062,Male,55,North,4,Business Pro,1318.06,5106.23,Fiber Optic,Two Year,Mailed Check,2,1,1,132,3,Yes
+CU-0063,Male,48,South,21,Business Pro,1272.73,27254.98,DSL,Two Year,Credit Card,1,1,1,196,0,No
+CU-0064,Male,22,West,16,Business Pro,1327.33,21112.05,Fiber Optic,One Year,Mailed Check,2,1,0,220,2,Yes
+CU-0065,Male,45,East,50,Standard,622.3,32044.66,No Internet,Month-to-Month,Credit Card,1,0,0,178,1,No
+CU-0066,Female,18,Central,32,Basic,320.4,10044.67,No Internet,One Year,Auto Bank Transfer,1,0,1,39,0,No
+CU-0067,Female,32,West,13,Premium 5G,972.92,12606.73,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,244,0,Yes
+CU-0068,Female,33,South,1,Business Pro,1359.88,1400.78,Fiber Optic,Month-to-Month,Auto Bank Transfer,4,1,0,137,0,Yes
+CU-0069,Female,73,Central,19,Standard,582.81,10621.03,No Internet,Month-to-Month,Mailed Check,1,0,1,126,0,Yes
+CU-0070,Male,30,West,12,Basic,348.58,4181.23,DSL,Month-to-Month,Auto Bank Transfer,3,1,0,188,2,Yes
+CU-0071,Female,51,Central,32,Standard,614.5,19163.13,DSL,Month-to-Month,Auto Bank Transfer,3,0,1,327,2,Yes
+CU-0072,Female,56,South,4,Standard,600.79,2321.64,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,172,0,Yes
+CU-0073,Female,52,Central,37,Basic,352.71,13104.12,No Internet,Month-to-Month,Mailed Check,1,1,1,71,0,Yes
+CU-0074,Female,57,North,21,Standard,587.3,11773.05,No Internet,Two Year,Auto Bank Transfer,1,0,0,97,0,No
+CU-0075,Male,40,East,7,Basic,286.48,1999.05,No Internet,Month-to-Month,Auto Bank Transfer,1,1,1,17,0,No
+CU-0076,Female,35,East,72,Basic,316.56,23803.42,Fiber Optic,One Year,Credit Card,2,0,0,151,0,No
+CU-0077,Female,24,West,16,Business Pro,1289.41,21391.05,Fiber Optic,One Year,Credit Card,2,0,1,295,0,No
+CU-0078,Female,59,North,1,Standard,585.8,571.01,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,219,1,Yes
+CU-0079,Female,69,South,16,Standard,551.08,8989.2,No Internet,One Year,Mailed Check,2,0,0,149,0,No
+CU-0080,Male,75,West,11,Premium 5G,972.54,10240.51,Fiber Optic,Two Year,Credit Card,1,0,0,178,0,No
+CU-0081,Female,54,South,5,Basic,339.01,1730.05,DSL,Two Year,Manual Bank Transfer,2,0,1,224,3,Yes
+CU-0082,Male,43,South,37,Standard,523.48,18717.97,Fiber Optic,One Year,Mailed Check,1,0,1,256,0,No
+CU-0083,Female,49,Central,26,Standard,580.09,15412.95,DSL,Two Year,Auto Bank Transfer,1,0,0,210,0,No
+CU-0084,Male,38,Central,32,Premium 5G,915.8,28854.1,DSL,Two Year,Mailed Check,2,0,0,46,0,No
+CU-0085,Female,19,East,9,Standard,561.22,5033.71,Fiber Optic,Month-to-Month,Credit Card,2,1,0,134,0,Yes
+CU-0086,Male,32,North,7,Premium 5G,917.98,6435.38,DSL,One Year,Credit Card,2,0,0,168,1,No
+CU-0087,Female,20,East,15,Standard,568.37,8669.96,DSL,Month-to-Month,Mailed Check,2,0,0,158,0,Yes
+CU-0088,Male,49,North,45,Premium 5G,933.39,43549.38,DSL,Month-to-Month,Credit Card,4,0,0,7,0,Yes
+CU-0089,Male,52,Central,3,Standard,594.7,1765.79,Fiber Optic,One Year,Credit Card,4,0,1,173,1,Yes
+CU-0090,Female,27,Central,4,Business Pro,1349.62,5216.22,DSL,One Year,Auto Bank Transfer,1,1,0,187,3,Yes
+CU-0091,Male,44,North,1,Business Pro,1344.85,1368.59,DSL,One Year,Auto Bank Transfer,2,0,0,193,0,Yes
+CU-0092,Male,41,Central,37,Standard,600.23,23049.14,Fiber Optic,Month-to-Month,Credit Card,1,1,1,206,0,Yes
+CU-0093,Male,43,North,10,Premium 5G,936.08,9420.18,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,97,0,No
+CU-0094,Female,59,North,12,Premium 5G,926.1,11090.06,DSL,Month-to-Month,Mailed Check,1,0,0,235,1,Yes
+CU-0095,Female,38,East,12,Basic,321.71,3742.6,DSL,One Year,Auto Bank Transfer,1,0,1,211,1,No
+CU-0096,Female,46,South,4,Basic,343.92,1331.86,Fiber Optic,One Year,Mailed Check,3,0,1,174,0,Yes
+CU-0097,Female,33,South,3,Basic,339.18,1019.08,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,185,1,Yes
+CU-0098,Male,56,West,14,Premium 5G,879.51,12465.65,Fiber Optic,One Year,Manual Bank Transfer,1,1,0,106,1,No
+CU-0099,Male,55,South,8,Premium 5G,875.43,6752.56,DSL,One Year,Credit Card,1,0,1,356,2,No
+CU-0100,Female,51,Central,2,Basic,367.36,712.08,DSL,Month-to-Month,Auto Bank Transfer,2,0,1,158,1,Yes
+CU-0101,Female,46,West,10,Standard,592.64,6219.25,Fiber Optic,One Year,Credit Card,1,0,0,246,0,No
+CU-0102,Male,28,South,3,Standard,602.18,1779.0,Fiber Optic,One Year,Mailed Check,1,0,1,230,0,Yes
+CU-0103,Female,58,Central,3,Basic,355.67,1105.92,Fiber Optic,Month-to-Month,Mailed Check,2,0,0,191,0,Yes
+CU-0104,Male,24,North,9,Standard,568.19,5165.15,Fiber Optic,Two Year,Manual Bank Transfer,2,0,0,122,1,No
+CU-0105,Male,54,East,38,Standard,527.9,19865.58,DSL,One Year,Credit Card,4,0,1,156,1,No
+CU-0106,Male,75,Central,10,Business Pro,1359.77,13823.84,DSL,Month-to-Month,Mailed Check,1,1,0,155,1,Yes
+CU-0107,Female,36,Central,1,Standard,559.13,552.78,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,230,2,Yes
+CU-0108,Male,32,West,24,Premium 5G,894.18,20886.57,DSL,Month-to-Month,Mailed Check,2,0,0,248,1,Yes
+CU-0109,Male,18,Central,12,Business Pro,1296.34,14986.42,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,395,0,No
+CU-0110,Female,25,Central,72,Standard,531.07,38420.42,Fiber Optic,Two Year,Manual Bank Transfer,1,0,1,221,0,No
+CU-0111,Male,22,South,37,Business Pro,1374.09,52299.98,DSL,One Year,Mailed Check,1,0,1,50,0,No
+CU-0112,Female,61,East,15,Basic,366.83,5475.28,No Internet,Month-to-Month,Mailed Check,2,0,0,277,0,Yes
+CU-0113,Male,40,North,72,Premium 5G,907.86,64035.96,DSL,One Year,Manual Bank Transfer,3,0,0,187,2,No
+CU-0114,Male,55,North,72,Premium 5G,870.15,61118.45,DSL,Month-to-Month,Auto Bank Transfer,2,0,1,119,1,No
+CU-0115,Female,53,West,5,Basic,281.19,1419.8,DSL,Month-to-Month,Credit Card,1,0,1,177,0,Yes
+CU-0116,Female,37,Central,9,Premium 5G,963.75,8974.31,No Internet,Month-to-Month,Auto Bank Transfer,1,1,1,179,1,Yes
+CU-0117,Female,46,West,2,Basic,283.49,579.79,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,182,2,Yes
+CU-0118,Male,52,North,35,Basic,319.77,10642.8,DSL,One Year,Auto Bank Transfer,1,0,1,210,1,No
+CU-0119,Female,25,North,12,Standard,576.66,7160.77,Fiber Optic,Two Year,Credit Card,1,1,0,215,0,No
+CU-0120,Male,45,South,12,Standard,598.43,7458.49,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,0,0,Yes
+CU-0121,Male,44,West,18,Premium 5G,880.46,15413.15,Fiber Optic,Month-to-Month,Mailed Check,2,1,0,113,1,Yes
+CU-0122,Female,56,South,30,Premium 5G,925.9,27610.89,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,247,3,Yes
+CU-0123,Female,59,East,28,Business Pro,1351.19,38741.27,No Internet,Month-to-Month,Mailed Check,1,0,0,226,0,Yes
+CU-0124,Male,48,East,68,Basic,316.26,22307.26,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,1,195,1,No
+CU-0125,Male,65,North,5,Standard,533.89,2736.55,Fiber Optic,Two Year,Credit Card,1,0,0,143,0,Yes
+CU-0126,Female,30,South,45,Basic,286.2,13333.74,DSL,One Year,Manual Bank Transfer,1,0,0,106,0,No
+CU-0127,Female,46,Central,2,Standard,547.62,1120.52,No Internet,Month-to-Month,Manual Bank Transfer,2,0,0,315,0,Yes
+CU-0128,Female,30,South,31,Standard,528.77,16693.08,Fiber Optic,Two Year,Auto Bank Transfer,3,0,0,154,1,No
+CU-0129,Female,38,Central,70,Premium 5G,942.59,65732.52,Fiber Optic,One Year,Credit Card,1,1,0,272,0,No
+CU-0130,Male,33,Central,5,Standard,602.24,3017.04,DSL,Two Year,Credit Card,1,0,1,228,1,No
+CU-0131,Female,41,West,19,Standard,530.6,10239.46,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,121,0,No
+CU-0132,Male,68,North,13,Business Pro,1327.63,16668.85,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,266,0,No
+CU-0133,Female,34,Central,32,Premium 5G,903.45,29773.65,No Internet,Two Year,Auto Bank Transfer,3,0,1,138,0,No
+CU-0134,Male,29,West,52,Standard,536.85,26555.59,Fiber Optic,One Year,Auto Bank Transfer,3,0,0,273,1,No
+CU-0135,Female,67,West,72,Business Pro,1340.68,94734.11,DSL,One Year,Mailed Check,1,0,1,208,1,No
+CU-0136,Female,45,South,34,Premium 5G,937.3,31397.75,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,213,0,Yes
+CU-0137,Female,36,East,29,Standard,552.58,15564.34,DSL,Month-to-Month,Credit Card,2,1,0,221,1,No
+CU-0138,Male,45,East,3,Standard,569.64,1771.22,Fiber Optic,Month-to-Month,Credit Card,3,0,0,232,0,Yes
+CU-0139,Female,51,East,72,Premium 5G,945.92,70418.18,No Internet,One Year,Auto Bank Transfer,1,1,0,145,1,No
+CU-0140,Male,40,North,1,Standard,552.14,557.57,DSL,Month-to-Month,Credit Card,2,0,1,162,1,Yes
+CU-0141,Female,52,West,21,Business Pro,1363.13,28687.12,DSL,Two Year,Manual Bank Transfer,1,0,0,128,0,No
+CU-0142,Female,44,Central,29,Basic,369.17,10667.85,DSL,Month-to-Month,Mailed Check,1,0,1,260,1,Yes
+CU-0143,Male,36,West,17,Premium 5G,973.56,16717.1,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,1,0,139,0,No
+CU-0144,Male,35,North,15,Standard,587.48,8785.54,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,124,0,Yes
+CU-0145,Female,37,Central,21,Standard,551.28,12076.72,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,1,36,1,No
+CU-0146,Female,32,West,32,Business Pro,1342.8,41930.48,Fiber Optic,Month-to-Month,Credit Card,4,1,0,58,1,Yes
+CU-0147,Male,53,North,15,Standard,532.31,7919.93,Fiber Optic,Month-to-Month,Credit Card,1,0,0,83,1,Yes
+CU-0148,Male,44,West,5,Premium 5G,950.51,4766.8,Fiber Optic,Two Year,Credit Card,1,0,0,240,1,Yes
+CU-0149,Male,34,North,32,Premium 5G,962.02,31377.22,Fiber Optic,One Year,Manual Bank Transfer,2,1,0,229,0,No
+CU-0150,Male,18,South,12,Basic,312.23,3756.43,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,1,0,124,0,Yes
+CU-0151,Female,59,East,9,Premium 5G,935.64,8306.74,DSL,Two Year,Auto Bank Transfer,1,0,1,140,0,No
+CU-0152,Male,40,East,6,Business Pro,1314.56,7804.89,DSL,Month-to-Month,Auto Bank Transfer,1,1,0,212,1,Yes
+CU-0153,Female,42,Central,9,Business Pro,1311.84,11671.39,DSL,One Year,Auto Bank Transfer,1,0,0,192,0,No
+CU-0154,Male,27,East,5,Standard,593.51,2888.92,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,110,1,Yes
+CU-0155,Male,29,North,38,Standard,599.39,21975.04,No Internet,One Year,Credit Card,1,1,1,264,1,No
+CU-0156,Male,46,Central,38,Basic,365.48,14504.94,DSL,Month-to-Month,Mailed Check,1,1,0,310,0,Yes
+CU-0157,Male,50,East,18,Standard,582.5,10868.31,No Internet,Month-to-Month,Manual Bank Transfer,2,0,1,121,2,Yes
+CU-0158,Male,50,Central,63,Basic,321.45,20631.51,Fiber Optic,One Year,Credit Card,2,0,1,0,0,No
+CU-0159,Female,34,East,33,Premium 5G,950.45,30244.66,Fiber Optic,One Year,Mailed Check,3,1,1,248,0,No
+CU-0160,Female,39,East,11,Basic,357.91,4113.27,DSL,Two Year,Manual Bank Transfer,3,0,0,120,1,No
+CU-0161,Female,39,West,48,Standard,551.18,25536.82,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,123,2,Yes
+CU-0162,Female,50,South,22,Standard,526.9,11803.49,DSL,One Year,Mailed Check,1,0,0,112,0,No
+CU-0163,Female,41,South,4,Standard,524.98,2152.13,DSL,Month-to-Month,Credit Card,3,0,0,38,2,Yes
+CU-0164,Female,29,East,43,Basic,331.15,14761.39,Fiber Optic,Two Year,Manual Bank Transfer,1,1,0,270,1,No
+CU-0165,Female,52,North,30,Basic,287.36,8804.46,Fiber Optic,Two Year,Mailed Check,1,0,1,188,0,No
+CU-0166,Male,35,Central,17,Standard,614.24,10416.99,DSL,One Year,Manual Bank Transfer,1,0,1,191,0,No
+CU-0167,Male,30,East,32,Premium 5G,956.59,31388.47,DSL,Month-to-Month,Mailed Check,2,0,0,293,1,Yes
+CU-0168,Female,30,East,12,Basic,281.27,3380.59,DSL,Two Year,Credit Card,1,1,1,192,2,No
+CU-0169,Female,75,Central,15,Business Pro,1326.09,20244.51,DSL,One Year,Manual Bank Transfer,1,0,1,242,1,No
+CU-0170,Male,37,Central,11,Premium 5G,893.56,9968.6,Fiber Optic,One Year,Auto Bank Transfer,2,1,1,134,0,No
+CU-0171,Male,20,Central,13,Standard,526.23,6655.08,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,243,1,No
+CU-0172,Female,49,West,37,Basic,348.82,13060.87,No Internet,Two Year,Manual Bank Transfer,2,0,1,184,1,No
+CU-0173,Male,59,North,54,Premium 5G,875.84,45627.27,DSL,One Year,Manual Bank Transfer,1,0,0,108,1,No
+CU-0174,Female,39,South,19,Basic,319.45,6106.5,No Internet,Month-to-Month,Auto Bank Transfer,1,1,1,151,2,Yes
+CU-0175,Female,41,East,72,Standard,547.55,39175.22,Fiber Optic,Month-to-Month,Credit Card,1,0,1,362,1,No
+CU-0176,Male,47,Central,47,Premium 5G,903.1,41308.32,Fiber Optic,One Year,Mailed Check,2,1,0,181,0,No
+CU-0177,Male,54,East,2,Premium 5G,888.57,1779.75,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,10,0,Yes
+CU-0178,Female,75,North,25,Basic,272.59,6513.34,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,0,62,0,Yes
+CU-0179,Female,48,Central,1,Basic,364.34,356.41,No Internet,One Year,Manual Bank Transfer,2,0,0,232,1,Yes
+CU-0180,Male,61,South,53,Standard,541.49,27996.73,DSL,One Year,Credit Card,1,0,0,147,2,No
+CU-0181,Female,32,West,4,Premium 5G,928.3,3632.43,Fiber Optic,Month-to-Month,Credit Card,2,0,0,277,0,Yes
+CU-0182,Male,26,East,52,Basic,290.02,14794.63,Fiber Optic,One Year,Auto Bank Transfer,3,0,0,93,0,No
+CU-0183,Male,33,East,72,Standard,543.25,40140.68,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,149,0,No
+CU-0184,Male,52,North,11,Business Pro,1338.54,14179.07,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,68,2,Yes
+CU-0185,Male,36,South,40,Basic,306.99,12077.74,No Internet,Two Year,Manual Bank Transfer,2,0,0,255,1,No
+CU-0186,Female,51,South,1,Premium 5G,882.68,908.94,Fiber Optic,Two Year,Manual Bank Transfer,1,0,1,247,2,Yes
+CU-0187,Male,27,East,72,Basic,365.73,27145.68,Fiber Optic,One Year,Credit Card,3,0,1,176,0,No
+CU-0188,Male,23,West,5,Basic,311.98,1511.77,Fiber Optic,Two Year,Auto Bank Transfer,2,0,0,234,1,Yes
+CU-0189,Male,34,West,72,Premium 5G,949.68,65752.59,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,196,0,No
+CU-0190,Female,47,South,72,Basic,313.4,23101.58,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,1,176,1,No
+CU-0191,Female,44,East,22,Basic,370.81,7805.67,Fiber Optic,One Year,Manual Bank Transfer,2,0,0,185,0,No
+CU-0192,Male,18,North,18,Basic,269.22,4688.02,DSL,Month-to-Month,Auto Bank Transfer,4,0,1,350,0,No
+CU-0193,Female,34,North,1,Standard,546.84,544.12,No Internet,Month-to-Month,Auto Bank Transfer,2,0,0,168,1,Yes
+CU-0194,Female,45,North,14,Basic,316.78,4534.02,DSL,One Year,Auto Bank Transfer,2,0,1,150,0,No
+CU-0195,Male,47,North,6,Basic,296.23,1699.62,Fiber Optic,One Year,Credit Card,2,0,0,225,0,No
+CU-0196,Male,22,South,18,Basic,377.64,6655.79,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,196,0,Yes
+CU-0197,Male,55,East,30,Standard,567.68,17284.7,No Internet,Month-to-Month,Credit Card,2,1,0,161,0,No
+CU-0198,Male,41,West,6,Basic,347.43,1982.75,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,124,3,Yes
+CU-0199,Male,68,North,11,Standard,610.14,6905.7,DSL,Two Year,Mailed Check,3,0,0,21,0,No
+CU-0200,Male,38,East,43,Standard,576.38,25514.2,No Internet,Month-to-Month,Mailed Check,2,0,1,111,0,No
+CU-0201,Male,31,Central,5,Basic,348.06,1780.74,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,298,1,Yes
+CU-0202,Male,43,West,9,Basic,295.81,2600.42,DSL,One Year,Mailed Check,2,0,0,57,0,Yes
+CU-0203,Female,62,Central,17,Standard,614.76,10588.26,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,138,2,Yes
+CU-0204,Male,42,Central,36,Standard,613.3,22461.31,Fiber Optic,Two Year,Manual Bank Transfer,2,0,0,64,1,No
+CU-0205,Male,38,West,10,Premium 5G,918.64,8895.6,No Internet,Two Year,Manual Bank Transfer,1,0,1,206,0,No
+CU-0206,Female,53,West,46,Standard,626.99,28698.71,Fiber Optic,Two Year,Mailed Check,4,0,0,0,0,No
+CU-0207,Female,63,West,15,Premium 5G,941.24,14413.35,DSL,Month-to-Month,Credit Card,3,0,1,244,0,No
+CU-0208,Female,61,Central,11,Premium 5G,952.44,9968.32,DSL,One Year,Manual Bank Transfer,1,0,1,213,3,Yes
+CU-0209,Female,43,South,9,Standard,597.41,5315.51,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,272,1,Yes
+CU-0210,Female,39,South,72,Standard,579.43,41857.68,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,93,1,No
+CU-0211,Female,39,West,36,Premium 5G,885.57,30979.04,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,0,284,0,Yes
+CU-0212,Female,22,Central,14,Premium 5G,879.38,12616.65,Fiber Optic,One Year,Credit Card,1,1,0,154,4,Yes
+CU-0213,Male,44,East,11,Premium 5G,931.28,10052.29,Fiber Optic,Month-to-Month,Credit Card,1,1,1,174,0,Yes
+CU-0214,Female,56,Central,48,Standard,582.9,29352.08,Fiber Optic,Month-to-Month,Credit Card,1,0,0,341,1,Yes
+CU-0215,Female,21,East,15,Standard,613.71,9169.9,No Internet,Month-to-Month,Mailed Check,1,0,1,191,0,Yes
+CU-0216,Male,34,East,29,Premium 5G,899.28,25182.54,Fiber Optic,One Year,Manual Bank Transfer,1,0,0,192,1,No
+CU-0217,Female,49,East,15,Standard,594.43,9282.21,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,286,2,No
+CU-0218,Female,36,South,3,Standard,615.91,1918.48,Fiber Optic,Month-to-Month,Auto Bank Transfer,4,0,0,194,2,Yes
+CU-0219,Male,45,North,16,Premium 5G,875.86,13782.92,DSL,Two Year,Auto Bank Transfer,2,1,0,245,1,No
+CU-0220,Female,39,South,2,Standard,577.29,1210.61,DSL,Month-to-Month,Mailed Check,1,1,0,56,0,Yes
+CU-0221,Female,35,West,27,Basic,292.16,8132.09,DSL,Month-to-Month,Manual Bank Transfer,4,0,0,267,2,Yes
+CU-0222,Female,44,East,1,Basic,365.29,363.16,No Internet,Month-to-Month,Manual Bank Transfer,1,0,0,395,1,Yes
+CU-0223,Female,26,Central,72,Business Pro,1309.86,91435.04,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,227,0,No
+CU-0224,Female,34,North,18,Business Pro,1366.89,25386.07,Fiber Optic,One Year,Mailed Check,1,0,0,22,1,No
+CU-0225,Female,45,East,5,Premium 5G,900.43,4694.45,No Internet,One Year,Auto Bank Transfer,3,0,1,162,1,Yes
+CU-0226,Male,34,North,1,Basic,326.21,326.93,Fiber Optic,One Year,Auto Bank Transfer,3,1,1,218,1,Yes
+CU-0227,Male,33,South,72,Business Pro,1336.09,100282.32,Fiber Optic,One Year,Auto Bank Transfer,1,1,0,105,1,No
+CU-0228,Male,39,South,5,Basic,291.49,1434.19,Fiber Optic,One Year,Auto Bank Transfer,1,1,0,228,1,Yes
+CU-0229,Male,37,East,34,Basic,305.96,10366.94,Fiber Optic,Two Year,Mailed Check,1,0,0,202,1,No
+CU-0230,Male,25,South,28,Standard,621.21,17197.89,DSL,Month-to-Month,Mailed Check,1,0,0,228,0,Yes
+CU-0231,Male,43,East,25,Standard,590.87,14317.24,DSL,One Year,Auto Bank Transfer,3,0,0,200,0,No
+CU-0232,Female,48,West,24,Business Pro,1303.31,30778.88,DSL,Month-to-Month,Auto Bank Transfer,1,1,0,335,2,Yes
+CU-0233,Male,26,Central,15,Standard,546.13,8168.16,Fiber Optic,One Year,Mailed Check,1,0,0,203,0,No
+CU-0234,Male,28,South,47,Standard,602.32,27728.91,DSL,Month-to-Month,Credit Card,1,0,0,319,0,No
+CU-0235,Female,41,West,9,Standard,551.99,5015.64,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,75,0,Yes
+CU-0236,Male,68,East,13,Standard,622.69,7757.19,DSL,One Year,Credit Card,2,0,0,244,1,No
+CU-0237,Female,51,East,26,Standard,530.36,13337.79,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,259,0,No
+CU-0238,Female,35,West,1,Standard,543.01,569.59,Fiber Optic,Month-to-Month,Credit Card,1,1,1,168,1,Yes
+CU-0239,Male,43,Central,3,Standard,572.03,1774.59,DSL,Month-to-Month,Auto Bank Transfer,2,1,1,129,0,Yes
+CU-0240,Female,46,South,67,Standard,546.47,37177.92,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,336,0,No
+CU-0241,Male,43,East,11,Standard,563.35,6403.6,Fiber Optic,One Year,Auto Bank Transfer,3,1,0,165,1,No
+CU-0242,Male,39,West,20,Basic,368.8,7122.47,DSL,Month-to-Month,Credit Card,2,0,0,125,2,Yes
+CU-0243,Female,18,Central,24,Standard,601.76,14487.44,Fiber Optic,Month-to-Month,Mailed Check,1,1,1,126,0,Yes
+CU-0244,Male,18,South,45,Standard,575.55,25403.69,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,1,1,90,1,Yes
+CU-0245,Male,60,East,71,Standard,605.16,41960.64,No Internet,Month-to-Month,Mailed Check,1,0,0,85,0,No
+CU-0246,Female,23,West,19,Standard,536.62,9860.27,Fiber Optic,One Year,Credit Card,2,0,0,225,1,No
+CU-0247,Female,35,East,43,Business Pro,1302.51,54689.03,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,131,1,No
+CU-0248,Female,26,South,22,Standard,626.12,13835.52,DSL,One Year,Manual Bank Transfer,2,0,0,115,0,No
+CU-0249,Male,48,Central,10,Basic,278.64,2672.13,DSL,Month-to-Month,Manual Bank Transfer,3,0,0,217,1,Yes
+CU-0250,Male,40,West,5,Standard,607.6,3117.04,DSL,Month-to-Month,Credit Card,1,0,0,321,0,Yes
+CU-0251,Female,63,Central,7,Business Pro,1306.93,8999.67,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,111,3,Yes
+CU-0252,Female,30,West,8,Basic,378.18,2921.43,No Internet,Two Year,Credit Card,1,1,0,185,3,Yes
+CU-0253,Female,51,Central,14,Basic,283.21,3806.16,Fiber Optic,One Year,Mailed Check,1,1,1,29,0,No
+CU-0254,Female,48,West,3,Basic,376.71,1149.78,Fiber Optic,Month-to-Month,Credit Card,3,1,1,284,0,Yes
+CU-0255,Female,54,Central,15,Business Pro,1304.62,19884.64,Fiber Optic,Month-to-Month,Credit Card,1,0,1,118,0,No
+CU-0256,Female,47,West,10,Standard,520.51,4987.32,DSL,Month-to-Month,Mailed Check,2,0,1,81,1,Yes
+CU-0257,Female,64,Central,2,Basic,335.1,659.54,No Internet,Month-to-Month,Mailed Check,3,1,1,336,3,Yes
+CU-0258,Female,40,Central,8,Basic,341.8,2770.96,Fiber Optic,Month-to-Month,Credit Card,2,1,1,200,0,Yes
+CU-0259,Male,45,Central,54,Premium 5G,900.71,47659.65,No Internet,Month-to-Month,Manual Bank Transfer,1,0,0,231,2,Yes
+CU-0260,Male,60,South,23,Standard,545.43,12036.78,DSL,Month-to-Month,Manual Bank Transfer,3,1,0,198,0,Yes
+CU-0261,Female,59,South,16,Standard,572.79,9494.16,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,207,2,No
+CU-0262,Female,51,North,9,Standard,586.88,5466.77,DSL,Month-to-Month,Credit Card,2,0,0,267,0,Yes
+CU-0263,Female,58,East,25,Premium 5G,873.57,21835.17,Fiber Optic,Month-to-Month,Credit Card,2,0,1,362,1,No
+CU-0264,Male,34,North,29,Premium 5G,906.1,27437.23,Fiber Optic,One Year,Mailed Check,1,1,1,353,0,No
+CU-0265,Male,44,South,13,Business Pro,1296.6,16216.03,Fiber Optic,Two Year,Credit Card,3,0,0,219,0,No
+CU-0266,Female,25,North,13,Standard,591.57,7645.83,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,45,0,Yes
+CU-0267,Male,62,East,10,Basic,312.09,3015.62,Fiber Optic,Month-to-Month,Credit Card,1,0,0,324,0,Yes
+CU-0268,Female,44,East,28,Standard,535.32,14497.45,No Internet,One Year,Manual Bank Transfer,1,0,0,291,2,No
+CU-0269,Female,56,West,43,Premium 5G,899.48,40382.86,DSL,Two Year,Manual Bank Transfer,1,0,1,127,1,No
+CU-0270,Female,44,North,4,Premium 5G,936.97,3688.61,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,217,1,Yes
+CU-0271,Male,39,Central,57,Premium 5G,890.66,50468.86,DSL,Month-to-Month,Credit Card,3,0,1,71,2,Yes
+CU-0272,Female,40,West,1,Standard,521.31,537.97,Fiber Optic,One Year,Auto Bank Transfer,2,0,1,189,0,Yes
+CU-0273,Male,48,Central,12,Basic,312.76,3757.51,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,129,0,Yes
+CU-0274,Female,56,West,8,Basic,369.93,3041.66,Fiber Optic,Two Year,Auto Bank Transfer,2,0,1,194,1,No
+CU-0275,Female,52,West,11,Business Pro,1344.27,15450.88,DSL,Month-to-Month,Credit Card,1,0,0,269,0,Yes
+CU-0276,Female,18,West,21,Basic,377.74,7568.78,No Internet,One Year,Mailed Check,1,0,0,154,0,No
+CU-0277,Male,47,Central,16,Business Pro,1277.0,19983.72,DSL,One Year,Manual Bank Transfer,1,0,1,72,1,No
+CU-0278,Male,33,West,14,Standard,610.59,8808.27,No Internet,Month-to-Month,Credit Card,3,0,0,266,1,No
+CU-0279,Female,47,West,72,Basic,349.32,25331.6,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,113,1,No
+CU-0280,Male,24,Central,16,Standard,581.73,9037.86,Fiber Optic,Month-to-Month,Credit Card,1,0,1,121,0,No
+CU-0281,Male,51,Central,17,Basic,297.75,5020.8,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,246,0,No
+CU-0282,Male,50,Central,16,Basic,337.83,5432.59,Fiber Optic,One Year,Credit Card,2,0,0,189,0,No
+CU-0283,Female,59,East,23,Basic,297.13,6716.05,DSL,Month-to-Month,Mailed Check,1,0,0,211,1,Yes
+CU-0284,Female,49,South,18,Basic,300.16,5349.02,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,0,0,115,0,Yes
+CU-0285,Male,40,West,40,Business Pro,1358.77,51736.23,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,0,259,1,Yes
+CU-0286,Male,18,West,35,Premium 5G,903.39,31336.24,DSL,Two Year,Manual Bank Transfer,1,0,0,95,1,No
+CU-0287,Female,28,South,72,Standard,588.52,43331.55,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,157,0,No
+CU-0288,Male,48,West,55,Premium 5G,889.11,51132.37,DSL,Month-to-Month,Auto Bank Transfer,3,0,1,222,0,No
+CU-0289,Male,36,Central,50,Premium 5G,899.11,46806.85,DSL,Two Year,Credit Card,1,0,1,237,1,No
+CU-0290,Male,30,East,41,Business Pro,1303.42,55356.09,DSL,One Year,Manual Bank Transfer,1,0,1,171,1,No
+CU-0291,Male,58,West,6,Premium 5G,943.43,5737.59,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,173,2,Yes
+CU-0292,Male,48,North,9,Basic,336.32,2968.25,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,197,0,Yes
+CU-0293,Male,40,South,12,Standard,556.85,6695.93,Fiber Optic,Two Year,Manual Bank Transfer,1,0,0,190,0,No
+CU-0294,Male,55,Central,16,Standard,608.94,10127.95,No Internet,One Year,Manual Bank Transfer,1,0,1,316,1,No
+CU-0295,Male,35,East,2,Basic,315.06,612.45,DSL,Two Year,Mailed Check,1,1,1,234,3,Yes
+CU-0296,Female,18,East,33,Premium 5G,894.79,30264.44,No Internet,Month-to-Month,Credit Card,1,0,0,194,0,No
+CU-0297,Male,54,Central,18,Premium 5G,964.26,16506.05,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,0,0,269,0,Yes
+CU-0298,Female,46,North,1,Standard,544.82,562.19,DSL,Two Year,Credit Card,4,1,0,134,1,Yes
+CU-0299,Male,32,Central,51,Business Pro,1323.23,66338.54,DSL,Two Year,Mailed Check,2,1,0,46,3,Yes
+CU-0300,Male,48,Central,4,Basic,321.42,1316.26,DSL,Month-to-Month,Credit Card,1,0,1,142,4,Yes
+CU-0301,Male,37,East,29,Basic,318.19,9531.85,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,306,0,Yes
+CU-0302,Male,54,East,71,Basic,352.99,24081.56,No Internet,Month-to-Month,Credit Card,1,1,1,264,1,No
+CU-0303,Male,45,South,62,Premium 5G,930.81,58699.41,No Internet,One Year,Credit Card,2,1,0,248,0,No
+CU-0304,Male,52,West,23,Premium 5G,908.88,21581.53,DSL,Month-to-Month,Credit Card,1,0,0,333,0,Yes
+CU-0305,Female,36,Central,11,Basic,291.24,3218.21,DSL,One Year,Mailed Check,3,0,0,167,0,No
+CU-0306,Male,44,South,33,Standard,616.29,20447.38,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,103,1,Yes
+CU-0307,Male,50,East,2,Standard,573.91,1115.29,No Internet,Month-to-Month,Credit Card,1,0,1,300,0,Yes
+CU-0308,Female,43,West,35,Premium 5G,906.6,31520.61,Fiber Optic,Month-to-Month,Mailed Check,3,0,0,245,1,Yes
+CU-0309,Male,40,South,22,Standard,587.11,12890.97,Fiber Optic,Month-to-Month,Credit Card,1,0,1,134,1,Yes
+CU-0310,Male,64,West,16,Business Pro,1326.76,21668.17,DSL,Month-to-Month,Credit Card,2,0,0,62,0,No
+CU-0311,Male,55,West,33,Premium 5G,972.26,32060.07,Fiber Optic,Two Year,Credit Card,2,0,1,216,0,No
+CU-0312,Female,20,East,10,Premium 5G,878.69,9030.12,Fiber Optic,Month-to-Month,Mailed Check,3,0,1,262,0,Yes
+CU-0313,Female,50,South,27,Standard,623.84,17212.97,No Internet,One Year,Credit Card,2,1,0,29,2,No
+CU-0314,Female,36,North,72,Premium 5G,970.49,71707.49,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,91,0,No
+CU-0315,Female,22,West,8,Premium 5G,911.41,7296.15,No Internet,One Year,Credit Card,2,0,1,187,2,Yes
+CU-0316,Female,36,South,61,Basic,329.81,20602.59,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,244,1,Yes
+CU-0317,Female,31,North,36,Basic,332.45,11512.46,DSL,Month-to-Month,Credit Card,1,0,0,131,1,Yes
+CU-0318,Male,41,South,11,Premium 5G,907.52,10099.74,No Internet,Month-to-Month,Manual Bank Transfer,2,1,1,135,2,Yes
+CU-0319,Male,26,South,35,Basic,303.98,11091.09,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,260,0,Yes
+CU-0320,Female,51,West,57,Premium 5G,927.61,54780.76,Fiber Optic,Month-to-Month,Manual Bank Transfer,4,0,0,405,1,No
+CU-0321,Male,22,West,24,Basic,303.07,7056.78,No Internet,One Year,Mailed Check,1,0,0,193,0,No
+CU-0322,Female,35,Central,15,Basic,317.71,4931.15,DSL,Two Year,Credit Card,2,0,0,189,0,No
+CU-0323,Female,20,North,3,Standard,619.46,1837.56,Fiber Optic,Month-to-Month,Credit Card,1,0,0,108,1,Yes
+CU-0324,Male,59,Central,64,Basic,356.78,23378.61,DSL,Month-to-Month,Manual Bank Transfer,1,1,1,97,0,No
+CU-0325,Male,58,East,25,Premium 5G,950.5,23863.66,Fiber Optic,Month-to-Month,Credit Card,1,0,0,140,1,Yes
+CU-0326,Male,29,South,4,Business Pro,1364.21,5498.98,Fiber Optic,Month-to-Month,Credit Card,2,0,1,66,0,Yes
+CU-0327,Female,42,East,18,Premium 5G,920.36,16334.09,Fiber Optic,One Year,Manual Bank Transfer,1,0,0,295,2,Yes
+CU-0328,Male,28,Central,13,Premium 5G,891.44,11967.05,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,165,2,Yes
+CU-0329,Female,55,Central,6,Basic,277.28,1643.03,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,123,1,Yes
+CU-0330,Male,27,North,8,Basic,273.33,2082.09,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,1,0,184,0,Yes
+CU-0331,Male,47,Central,38,Business Pro,1296.6,49318.38,No Internet,One Year,Manual Bank Transfer,2,1,1,201,1,No
+CU-0332,Female,39,North,8,Standard,628.87,4807.07,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,0,43,0,Yes
+CU-0333,Female,39,Central,11,Premium 5G,937.77,10766.92,Fiber Optic,One Year,Credit Card,4,0,0,214,0,No
+CU-0334,Female,30,South,9,Standard,577.67,5149.97,DSL,Two Year,Auto Bank Transfer,1,1,0,234,0,No
+CU-0335,Male,45,West,4,Premium 5G,958.89,3649.02,No Internet,Month-to-Month,Auto Bank Transfer,3,0,1,180,1,Yes
+CU-0336,Male,50,South,8,Basic,340.31,2725.5,Fiber Optic,Two Year,Manual Bank Transfer,2,0,1,121,0,No
+CU-0337,Male,30,South,4,Basic,332.93,1360.77,DSL,One Year,Credit Card,1,0,1,293,1,Yes
+CU-0338,Male,34,West,7,Basic,359.39,2424.9,Fiber Optic,Month-to-Month,Credit Card,1,0,0,119,1,Yes
+CU-0339,Female,58,North,31,Standard,528.74,16680.85,DSL,One Year,Credit Card,1,0,1,227,1,No
+CU-0340,Male,58,South,4,Basic,295.26,1147.21,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,57,1,Yes
+CU-0341,Male,39,West,14,Basic,351.13,4676.22,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,142,0,Yes
+CU-0342,Male,39,East,41,Basic,318.1,13338.18,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,266,1,No
+CU-0343,Female,39,Central,18,Premium 5G,888.16,16061.83,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,38,0,Yes
+CU-0344,Male,40,West,4,Business Pro,1364.45,5571.12,DSL,One Year,Credit Card,3,0,0,128,0,Yes
+CU-0345,Male,33,Central,1,Premium 5G,877.96,872.25,DSL,One Year,Credit Card,1,1,0,347,0,Yes
+CU-0346,Female,43,North,8,Business Pro,1316.92,10144.59,Fiber Optic,One Year,Credit Card,1,0,0,264,0,No
+CU-0347,Female,58,Central,44,Premium 5G,881.38,39695.64,DSL,One Year,Manual Bank Transfer,1,0,1,147,1,No
+CU-0348,Male,52,South,2,Premium 5G,940.09,1907.88,DSL,One Year,Manual Bank Transfer,2,1,0,220,0,Yes
+CU-0349,Female,36,Central,47,Standard,605.27,29718.96,DSL,Month-to-Month,Auto Bank Transfer,1,1,0,327,1,No
+CU-0350,Male,27,South,10,Basic,341.11,3254.12,Fiber Optic,Two Year,Manual Bank Transfer,4,1,0,268,2,Yes
+CU-0351,Female,46,Central,8,Premium 5G,871.75,7127.93,Fiber Optic,One Year,Credit Card,1,0,0,53,1,No
+CU-0352,Female,36,North,45,Basic,274.39,12437.4,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,1,80,0,Yes
+CU-0353,Female,63,Central,54,Premium 5G,900.22,49554.29,DSL,One Year,Manual Bank Transfer,4,0,0,221,0,No
+CU-0354,Male,57,South,30,Premium 5G,875.18,26905.28,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,124,1,No
+CU-0355,Male,34,West,2,Standard,520.61,1085.07,No Internet,Month-to-Month,Mailed Check,1,0,0,127,0,Yes
+CU-0356,Male,41,West,15,Standard,627.25,9213.28,DSL,Month-to-Month,Manual Bank Transfer,3,0,0,282,1,No
+CU-0357,Female,41,West,6,Standard,570.6,3276.74,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,219,0,Yes
+CU-0358,Male,52,West,5,Business Pro,1359.36,6697.61,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,219,0,Yes
+CU-0359,Male,44,North,14,Standard,539.18,7176.26,Fiber Optic,One Year,Credit Card,2,0,1,255,0,No
+CU-0360,Male,39,Central,14,Standard,553.14,7946.95,No Internet,Two Year,Auto Bank Transfer,4,0,1,285,1,No
+CU-0361,Male,61,South,1,Standard,587.94,567.13,Fiber Optic,Month-to-Month,Credit Card,4,1,0,247,0,Yes
+CU-0362,Female,53,North,40,Basic,314.51,12805.45,DSL,Month-to-Month,Credit Card,3,0,1,134,1,No
+CU-0363,Female,51,South,12,Basic,306.64,3856.81,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,0,126,0,Yes
+CU-0364,Female,44,South,7,Standard,572.14,3830.04,Fiber Optic,Two Year,Manual Bank Transfer,1,0,0,101,0,No
+CU-0365,Male,43,Central,11,Standard,617.01,6999.96,Fiber Optic,Month-to-Month,Credit Card,1,0,0,152,0,Yes
+CU-0366,Male,18,Central,10,Standard,536.88,5615.63,No Internet,Two Year,Auto Bank Transfer,1,0,1,127,2,No
+CU-0367,Female,41,North,4,Premium 5G,898.61,3767.78,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,171,0,Yes
+CU-0368,Male,42,North,17,Basic,337.95,5664.0,No Internet,Month-to-Month,Auto Bank Transfer,1,0,1,142,1,No
+CU-0369,Male,22,Central,7,Premium 5G,919.95,6431.17,No Internet,One Year,Manual Bank Transfer,1,0,0,177,1,No
+CU-0370,Male,41,North,63,Premium 5G,915.08,57749.61,DSL,Two Year,Credit Card,1,0,1,128,0,No
+CU-0371,Female,24,West,36,Premium 5G,936.59,35040.54,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,238,3,Yes
+CU-0372,Male,24,South,28,Premium 5G,885.13,23940.17,Fiber Optic,One Year,Auto Bank Transfer,1,0,1,80,1,No
+CU-0373,Male,40,West,16,Business Pro,1368.85,20997.98,No Internet,Two Year,Mailed Check,1,0,1,227,0,No
+CU-0374,Male,75,Central,72,Standard,574.29,40347.32,Fiber Optic,Month-to-Month,Credit Card,2,1,0,274,1,No
+CU-0375,Female,30,North,35,Standard,535.43,19017.88,DSL,Two Year,Mailed Check,2,0,1,209,1,No
+CU-0376,Male,49,Central,66,Basic,349.85,23936.24,Fiber Optic,One Year,Mailed Check,1,0,1,219,1,No
+CU-0377,Female,40,South,1,Standard,624.69,649.86,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,115,0,Yes
+CU-0378,Female,27,Central,35,Basic,324.68,11721.33,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,169,1,Yes
+CU-0379,Female,45,South,22,Business Pro,1348.87,30914.89,No Internet,One Year,Credit Card,1,0,0,203,1,No
+CU-0380,Male,21,East,19,Standard,558.22,10550.29,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,159,1,No
+CU-0381,Female,61,North,31,Business Pro,1369.88,42820.56,Fiber Optic,One Year,Credit Card,3,0,1,146,0,No
+CU-0382,Female,44,West,3,Basic,372.81,1171.72,DSL,Two Year,Credit Card,1,1,0,40,1,Yes
+CU-0383,Female,50,West,32,Basic,333.69,10856.37,DSL,Two Year,Manual Bank Transfer,1,0,0,229,0,No
+CU-0384,Male,43,West,11,Basic,365.35,4132.65,DSL,Month-to-Month,Credit Card,1,1,0,274,1,Yes
+CU-0385,Female,54,East,27,Standard,620.55,15943.67,Fiber Optic,Two Year,Mailed Check,1,0,1,255,0,No
+CU-0386,Male,18,North,44,Standard,576.97,25543.05,DSL,Month-to-Month,Credit Card,2,0,0,154,0,Yes
+CU-0387,Female,50,East,3,Basic,279.18,804.12,DSL,Two Year,Manual Bank Transfer,2,0,0,229,1,Yes
+CU-0388,Female,18,West,71,Basic,306.09,21519.98,DSL,Month-to-Month,Auto Bank Transfer,2,0,1,192,0,No
+CU-0389,Female,22,North,37,Standard,563.71,21502.53,DSL,Month-to-Month,Auto Bank Transfer,1,1,1,63,0,No
+CU-0390,Female,42,South,72,Basic,307.96,21994.59,Fiber Optic,One Year,Manual Bank Transfer,1,0,1,165,2,No
+CU-0391,Female,43,East,1,Standard,579.49,586.42,Fiber Optic,Two Year,Auto Bank Transfer,3,0,0,110,0,Yes
+CU-0392,Female,47,East,11,Business Pro,1372.5,15355.46,Fiber Optic,Month-to-Month,Credit Card,2,0,0,180,0,Yes
+CU-0393,Female,61,East,2,Standard,567.89,1095.08,DSL,One Year,Credit Card,1,0,0,195,1,Yes
+CU-0394,Male,56,South,9,Premium 5G,917.69,8247.04,Fiber Optic,Month-to-Month,Credit Card,2,0,0,83,3,Yes
+CU-0395,Male,46,Central,20,Standard,528.28,10761.07,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,168,1,Yes
+CU-0396,Male,21,Central,7,Premium 5G,887.51,6019.94,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,123,3,Yes
+CU-0397,Female,34,South,15,Standard,624.05,9753.56,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,181,1,No
+CU-0398,Male,31,South,27,Standard,621.91,17483.73,DSL,Month-to-Month,Auto Bank Transfer,2,1,0,180,0,Yes
+CU-0399,Male,72,East,72,Basic,360.65,25776.7,Fiber Optic,One Year,Auto Bank Transfer,2,1,0,125,1,No
+CU-0400,Female,66,Central,21,Business Pro,1341.64,28238.42,DSL,Month-to-Month,Auto Bank Transfer,4,0,0,10,1,Yes
+CU-0401,Female,45,South,39,Basic,366.62,13779.59,DSL,One Year,Auto Bank Transfer,1,1,1,210,0,No
+CU-0402,Female,29,North,18,Premium 5G,930.84,16843.43,DSL,Month-to-Month,Mailed Check,2,0,0,247,1,Yes
+CU-0403,Female,41,East,20,Premium 5G,978.65,19436.66,DSL,Two Year,Manual Bank Transfer,1,0,0,220,3,Yes
+CU-0404,Male,31,East,71,Premium 5G,893.17,63092.18,Fiber Optic,One Year,Manual Bank Transfer,4,0,0,185,1,No
+CU-0405,Female,25,South,17,Premium 5G,887.0,14742.67,DSL,One Year,Manual Bank Transfer,1,1,0,41,0,No
+CU-0406,Male,49,North,72,Premium 5G,872.96,63848.71,DSL,One Year,Auto Bank Transfer,3,0,0,182,3,Yes
+CU-0407,Male,30,North,5,Basic,292.3,1504.25,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,233,0,Yes
+CU-0408,Male,53,Central,2,Premium 5G,937.58,1963.4,Fiber Optic,Month-to-Month,Credit Card,1,0,0,85,1,Yes
+CU-0409,Male,39,North,1,Premium 5G,947.43,934.76,DSL,One Year,Auto Bank Transfer,3,0,1,20,0,Yes
+CU-0410,Female,61,Central,26,Standard,601.23,15709.77,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,100,0,Yes
+CU-0411,Female,71,South,33,Basic,342.61,11204.72,Fiber Optic,Month-to-Month,Credit Card,1,0,0,183,1,Yes
+CU-0412,Male,33,West,36,Business Pro,1318.1,47692.13,No Internet,Month-to-Month,Auto Bank Transfer,2,0,0,152,2,Yes
+CU-0413,Female,33,North,3,Premium 5G,890.96,2638.47,Fiber Optic,One Year,Mailed Check,2,0,1,191,2,Yes
+CU-0414,Female,67,East,41,Standard,621.28,26613.3,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,220,2,Yes
+CU-0415,Male,18,West,55,Premium 5G,963.49,50812.78,No Internet,Month-to-Month,Mailed Check,1,0,0,178,0,Yes
+CU-0416,Male,50,North,40,Standard,606.56,23791.12,DSL,Two Year,Mailed Check,1,0,0,41,1,No
+CU-0417,Male,69,Central,8,Standard,577.03,4687.99,DSL,Two Year,Manual Bank Transfer,2,0,0,282,0,No
+CU-0418,Male,51,South,33,Premium 5G,908.11,30893.21,DSL,One Year,Manual Bank Transfer,1,0,0,93,2,No
+CU-0419,Female,52,West,4,Basic,285.94,1167.25,DSL,Month-to-Month,Mailed Check,2,0,1,101,0,Yes
+CU-0420,Female,57,West,1,Basic,314.83,303.97,Fiber Optic,One Year,Auto Bank Transfer,1,0,1,192,0,Yes
+CU-0421,Female,55,South,72,Premium 5G,877.15,66267.27,Fiber Optic,Month-to-Month,Credit Card,2,0,0,210,1,Yes
+CU-0422,Female,31,Central,9,Premium 5G,968.63,9131.84,DSL,Two Year,Credit Card,1,0,1,140,0,No
+CU-0423,Male,55,Central,10,Standard,534.21,5302.63,Fiber Optic,One Year,Mailed Check,2,1,1,108,2,Yes
+CU-0424,Female,26,West,72,Standard,529.78,38246.45,DSL,Month-to-Month,Credit Card,1,0,1,249,3,Yes
+CU-0425,Female,40,Central,2,Standard,621.93,1256.0,Fiber Optic,One Year,Credit Card,4,1,0,295,1,Yes
+CU-0426,Female,37,West,61,Business Pro,1286.22,77413.07,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,263,1,Yes
+CU-0427,Male,23,Central,13,Premium 5G,916.51,11778.92,Fiber Optic,One Year,Credit Card,1,0,0,5,2,No
+CU-0428,Male,34,West,9,Standard,538.76,4886.7,No Internet,Month-to-Month,Auto Bank Transfer,2,0,0,233,0,Yes
+CU-0429,Female,50,West,1,Basic,277.26,278.25,No Internet,Month-to-Month,Credit Card,1,0,0,126,1,Yes
+CU-0430,Female,49,North,55,Premium 5G,869.4,46956.58,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,0,1,232,1,No
+CU-0431,Female,41,Central,2,Basic,370.97,752.95,DSL,One Year,Mailed Check,3,0,0,274,1,Yes
+CU-0432,Female,43,Central,13,Premium 5G,945.79,12465.12,DSL,Month-to-Month,Mailed Check,1,0,0,262,0,Yes
+CU-0433,Female,18,South,22,Standard,519.52,10940.71,DSL,Two Year,Credit Card,1,1,0,178,1,No
+CU-0434,Male,55,East,28,Premium 5G,974.16,27361.96,Fiber Optic,Two Year,Manual Bank Transfer,3,0,1,173,2,No
+CU-0435,Female,33,North,19,Standard,601.35,11800.33,Fiber Optic,Month-to-Month,Credit Card,2,0,0,191,0,Yes
+CU-0436,Male,27,Central,71,Basic,295.39,20098.92,No Internet,One Year,Auto Bank Transfer,1,0,1,0,0,No
+CU-0437,Male,49,North,12,Standard,610.95,7039.08,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,0,230,1,Yes
+CU-0438,Female,52,South,72,Premium 5G,935.42,67305.4,DSL,Two Year,Auto Bank Transfer,1,0,1,112,0,No
+CU-0439,Male,59,South,72,Basic,363.93,25589.87,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,164,1,No
+CU-0440,Male,59,North,64,Standard,572.95,35274.46,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,164,0,No
+CU-0441,Male,45,East,12,Basic,370.69,4457.95,DSL,Month-to-Month,Credit Card,1,0,0,100,1,Yes
+CU-0442,Male,28,South,26,Basic,340.94,8969.56,DSL,Month-to-Month,Mailed Check,1,1,0,0,0,Yes
+CU-0443,Male,47,West,6,Business Pro,1336.47,7827.71,DSL,Month-to-Month,Credit Card,2,1,1,157,0,No
+CU-0444,Male,43,West,40,Basic,345.18,13906.47,No Internet,Month-to-Month,Mailed Check,3,0,0,69,1,Yes
+CU-0445,Female,40,South,20,Standard,603.04,11463.89,No Internet,Month-to-Month,Manual Bank Transfer,2,0,1,193,0,No
+CU-0446,Female,43,Central,2,Standard,591.12,1151.41,DSL,Two Year,Manual Bank Transfer,3,0,0,141,0,Yes
+CU-0447,Female,18,East,24,Basic,352.19,8263.16,No Internet,One Year,Manual Bank Transfer,1,0,0,178,2,No
+CU-0448,Female,36,West,7,Business Pro,1334.18,9227.12,Fiber Optic,One Year,Manual Bank Transfer,1,1,1,116,2,No
+CU-0449,Male,28,South,3,Business Pro,1301.27,3900.18,Fiber Optic,One Year,Mailed Check,3,0,0,152,0,Yes
+CU-0450,Female,38,Central,31,Business Pro,1369.35,44343.43,DSL,Month-to-Month,Auto Bank Transfer,4,0,1,195,1,No
+CU-0451,Male,41,West,9,Business Pro,1309.46,11364.2,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,1,162,0,Yes
+CU-0452,Male,75,North,41,Premium 5G,969.58,38819.72,No Internet,Month-to-Month,Credit Card,1,1,1,55,2,Yes
+CU-0453,Female,37,South,10,Business Pro,1339.57,12757.31,Fiber Optic,Two Year,Credit Card,1,1,1,0,1,No
+CU-0454,Female,24,North,19,Basic,373.33,7336.19,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,221,2,Yes
+CU-0455,Male,39,West,12,Premium 5G,876.92,10266.99,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,96,0,Yes
+CU-0456,Female,28,North,7,Standard,572.06,4085.66,DSL,Month-to-Month,Credit Card,2,0,0,201,1,Yes
+CU-0457,Male,18,South,37,Business Pro,1290.46,49946.1,DSL,Month-to-Month,Credit Card,2,0,0,201,0,No
+CU-0458,Female,57,East,10,Basic,323.59,3250.29,DSL,One Year,Credit Card,1,0,1,235,0,No
+CU-0459,Female,58,North,32,Basic,363.12,11636.89,DSL,One Year,Credit Card,2,0,1,190,0,No
+CU-0460,Male,23,North,28,Standard,604.57,17505.78,Fiber Optic,One Year,Manual Bank Transfer,1,1,0,121,0,No
+CU-0461,Male,46,West,33,Premium 5G,883.14,27740.01,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,80,0,Yes
+CU-0462,Female,18,North,22,Standard,568.14,12191.79,Fiber Optic,Month-to-Month,Credit Card,3,0,0,175,0,Yes
+CU-0463,Male,29,Central,4,Standard,576.99,2362.02,DSL,Two Year,Manual Bank Transfer,1,0,0,305,0,Yes
+CU-0464,Male,57,North,8,Basic,339.32,2599.23,DSL,One Year,Credit Card,2,1,1,185,0,No
+CU-0465,Male,18,East,28,Standard,529.34,14511.34,No Internet,Two Year,Credit Card,1,0,0,291,1,No
+CU-0466,Male,43,East,23,Standard,608.97,13359.73,No Internet,Month-to-Month,Credit Card,2,1,0,188,1,No
+CU-0467,Female,39,Central,13,Premium 5G,915.3,12447.94,Fiber Optic,One Year,Mailed Check,3,0,0,92,0,No
+CU-0468,Male,51,West,17,Business Pro,1299.39,22735.51,DSL,One Year,Manual Bank Transfer,1,0,1,92,2,No
+CU-0469,Male,18,South,7,Premium 5G,875.2,6046.38,Fiber Optic,One Year,Mailed Check,4,1,1,167,0,No
+CU-0470,Female,37,East,44,Basic,319.18,14033.19,DSL,Month-to-Month,Mailed Check,1,0,0,163,0,Yes
+CU-0471,Female,19,West,43,Premium 5G,973.02,41458.81,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,160,0,Yes
+CU-0472,Female,53,North,9,Standard,556.62,5176.02,DSL,One Year,Credit Card,1,0,0,277,1,No
+CU-0473,Male,41,East,30,Premium 5G,912.38,26006.35,DSL,One Year,Auto Bank Transfer,1,0,1,240,1,No
+CU-0474,Male,49,South,53,Premium 5G,910.17,46942.9,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,204,0,No
+CU-0475,Female,47,North,6,Standard,538.67,3361.92,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,203,1,Yes
+CU-0476,Female,48,North,28,Standard,535.01,14839.63,DSL,One Year,Auto Bank Transfer,2,0,1,111,1,No
+CU-0477,Male,44,South,15,Standard,567.21,8306.25,DSL,One Year,Manual Bank Transfer,1,0,1,95,1,No
+CU-0478,Male,50,North,6,Basic,348.34,2018.23,Fiber Optic,One Year,Manual Bank Transfer,2,0,0,238,0,No
+CU-0479,Female,37,Central,36,Standard,616.11,22241.65,Fiber Optic,One Year,Manual Bank Transfer,2,0,0,274,1,No
+CU-0480,Male,29,South,34,Standard,552.69,19426.31,DSL,Two Year,Manual Bank Transfer,3,0,0,176,1,No
+CU-0481,Male,52,West,39,Standard,519.72,20227.57,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,282,0,No
+CU-0482,Male,30,Central,72,Standard,621.39,42527.01,Fiber Optic,Two Year,Mailed Check,1,0,1,214,1,No
+CU-0483,Male,45,Central,18,Premium 5G,932.78,16223.4,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,122,0,No
+CU-0484,Female,60,West,18,Standard,592.67,11160.27,Fiber Optic,One Year,Mailed Check,2,0,0,161,2,Yes
+CU-0485,Male,48,Central,47,Basic,370.61,16948.03,Fiber Optic,One Year,Credit Card,3,0,0,260,0,No
+CU-0486,Female,27,East,46,Standard,593.68,27014.25,DSL,Two Year,Credit Card,2,0,0,96,1,No
+CU-0487,Female,53,Central,72,Standard,531.68,36776.48,Fiber Optic,Two Year,Mailed Check,3,0,0,128,1,No
+CU-0488,Male,18,North,26,Basic,338.41,9197.45,Fiber Optic,One Year,Credit Card,1,1,1,188,0,No
+CU-0489,Male,28,West,1,Standard,591.81,574.5,No Internet,Two Year,Credit Card,3,0,0,160,0,Yes
+CU-0490,Male,35,South,4,Basic,302.35,1233.34,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,225,2,Yes
+CU-0491,Female,34,North,1,Premium 5G,872.52,910.93,No Internet,One Year,Credit Card,1,0,0,92,0,Yes
+CU-0492,Female,72,West,20,Standard,599.51,11850.86,No Internet,Month-to-Month,Credit Card,1,0,1,31,0,No
+CU-0493,Female,21,East,21,Basic,298.6,6460.68,DSL,Two Year,Mailed Check,1,1,0,38,2,No
+CU-0494,Male,31,East,25,Basic,316.99,8298.76,DSL,Month-to-Month,Auto Bank Transfer,1,1,1,208,1,No
+CU-0495,Male,41,East,18,Standard,558.53,10028.77,DSL,One Year,Auto Bank Transfer,1,0,1,137,4,Yes
+CU-0496,Female,33,East,43,Business Pro,1365.79,61663.9,DSL,One Year,Mailed Check,1,0,0,191,1,No
+CU-0497,Female,51,Central,72,Premium 5G,886.78,66439.43,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,192,2,Yes
+CU-0498,Female,62,Central,15,Premium 5G,961.25,14641.92,DSL,Month-to-Month,Credit Card,2,1,1,154,0,No
+CU-0499,Female,46,South,11,Business Pro,1280.21,13948.03,DSL,Two Year,Credit Card,2,0,1,135,0,No
+CU-0500,Male,18,South,40,Basic,348.52,13531.22,DSL,Month-to-Month,Credit Card,1,0,0,224,1,No
+CU-0501,Female,44,East,7,Basic,356.38,2394.62,DSL,Two Year,Credit Card,2,0,0,131,2,No
+CU-0502,Male,39,West,26,Premium 5G,908.42,22870.67,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,1,166,0,Yes
+CU-0503,Male,34,South,4,Premium 5G,876.61,3447.25,DSL,One Year,Mailed Check,2,0,0,225,0,Yes
+CU-0504,Male,48,West,26,Business Pro,1349.26,33509.3,No Internet,Two Year,Mailed Check,1,0,0,204,0,No
+CU-0505,Female,38,North,7,Premium 5G,952.93,6594.57,No Internet,Two Year,Credit Card,1,0,1,73,1,No
+CU-0506,Male,41,West,8,Premium 5G,895.64,6929.9,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,1,0,149,0,Yes
+CU-0507,Male,52,South,20,Standard,605.97,11675.28,DSL,One Year,Auto Bank Transfer,2,0,0,123,2,No
+CU-0508,Female,37,East,10,Basic,327.76,3383.73,DSL,Two Year,Mailed Check,2,0,1,125,0,No
+CU-0509,Male,33,East,3,Business Pro,1337.13,4071.91,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,0,1,Yes
+CU-0510,Male,32,West,4,Basic,371.97,1490.88,DSL,Two Year,Auto Bank Transfer,2,0,0,87,0,Yes
+CU-0511,Male,50,East,28,Basic,371.4,9994.59,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,45,0,No
+CU-0512,Female,30,South,20,Standard,551.46,11286.62,No Internet,Month-to-Month,Manual Bank Transfer,1,0,0,289,2,Yes
+CU-0513,Female,38,North,10,Basic,317.7,3098.61,No Internet,Month-to-Month,Credit Card,1,0,1,67,0,Yes
+CU-0514,Female,27,Central,22,Business Pro,1356.76,31106.72,No Internet,Month-to-Month,Mailed Check,1,1,0,291,0,Yes
+CU-0515,Female,49,West,10,Standard,585.53,5843.66,Fiber Optic,Month-to-Month,Credit Card,1,0,0,124,1,Yes
+CU-0516,Male,46,South,10,Business Pro,1365.09,13417.99,Fiber Optic,Two Year,Mailed Check,3,0,1,97,0,No
+CU-0517,Female,50,East,72,Premium 5G,891.85,61132.77,Fiber Optic,Month-to-Month,Credit Card,1,0,0,216,0,No
+CU-0518,Male,48,East,8,Basic,335.56,2656.49,DSL,Two Year,Manual Bank Transfer,1,0,0,280,0,No
+CU-0519,Male,31,East,27,Premium 5G,930.45,26136.12,DSL,Month-to-Month,Auto Bank Transfer,3,0,1,172,1,No
+CU-0520,Female,60,West,4,Basic,270.37,1122.56,DSL,One Year,Mailed Check,1,0,1,331,0,Yes
+CU-0521,Female,50,East,8,Standard,524.69,4054.19,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,220,3,Yes
+CU-0522,Male,18,South,21,Standard,537.78,10984.89,Fiber Optic,Month-to-Month,Credit Card,1,0,0,80,2,Yes
+CU-0523,Male,30,Central,3,Business Pro,1347.72,4159.67,Fiber Optic,One Year,Manual Bank Transfer,1,1,0,195,0,Yes
+CU-0524,Male,18,West,46,Standard,526.31,23003.58,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,330,0,Yes
+CU-0525,Female,49,Central,16,Premium 5G,968.87,15376.49,Fiber Optic,Month-to-Month,Manual Bank Transfer,4,0,0,124,0,Yes
+CU-0526,Female,41,West,7,Standard,521.43,3701.37,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,40,1,Yes
+CU-0527,Female,45,North,29,Standard,622.95,17418.1,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,152,1,No
+CU-0528,Male,36,East,23,Business Pro,1279.51,28023.65,DSL,Month-to-Month,Mailed Check,3,0,0,52,1,Yes
+CU-0529,Female,28,West,31,Premium 5G,879.06,27288.67,DSL,Month-to-Month,Mailed Check,3,1,1,177,1,Yes
+CU-0530,Female,24,North,49,Standard,585.96,29938.01,Fiber Optic,One Year,Credit Card,1,0,1,196,0,No
+CU-0531,Female,57,Central,4,Standard,572.17,2234.55,DSL,Month-to-Month,Mailed Check,1,0,0,167,1,Yes
+CU-0532,Female,64,North,58,Basic,330.28,19706.69,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,1,67,2,No
+CU-0533,Female,46,West,39,Premium 5G,881.71,36000.67,No Internet,Month-to-Month,Auto Bank Transfer,1,0,1,0,0,No
+CU-0534,Male,53,West,55,Premium 5G,966.0,53051.8,Fiber Optic,Two Year,Auto Bank Transfer,1,0,1,83,0,No
+CU-0535,Male,51,Central,8,Standard,591.53,4634.74,DSL,Month-to-Month,Manual Bank Transfer,3,0,0,146,1,Yes
+CU-0536,Male,18,West,1,Standard,618.8,633.67,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,210,1,Yes
+CU-0537,Female,18,East,7,Premium 5G,965.52,6703.31,No Internet,Two Year,Credit Card,3,0,1,86,1,No
+CU-0538,Male,58,West,44,Premium 5G,907.0,38948.65,Fiber Optic,Month-to-Month,Credit Card,1,0,0,180,0,Yes
+CU-0539,Male,42,East,23,Premium 5G,915.75,20589.29,DSL,One Year,Credit Card,1,1,0,233,0,No
+CU-0540,Female,22,South,12,Standard,578.09,6731.42,DSL,Two Year,Manual Bank Transfer,4,0,1,143,2,No
+CU-0541,Male,52,West,6,Standard,579.05,3312.49,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,132,0,Yes
+CU-0542,Male,38,South,22,Standard,528.56,11306.16,DSL,Month-to-Month,Mailed Check,3,0,0,254,0,Yes
+CU-0543,Male,30,East,15,Standard,588.03,9071.31,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,376,2,No
+CU-0544,Male,51,North,1,Basic,368.07,379.98,Fiber Optic,One Year,Mailed Check,1,1,1,217,0,Yes
+CU-0545,Female,29,East,33,Basic,318.96,10405.54,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,328,0,No
+CU-0546,Male,42,North,4,Basic,282.59,1085.26,Fiber Optic,Month-to-Month,Credit Card,2,1,0,126,0,Yes
+CU-0547,Male,41,Central,40,Basic,296.38,11962.35,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,62,0,Yes
+CU-0548,Female,67,South,3,Basic,353.87,1045.82,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,205,1,Yes
+CU-0549,Female,45,South,31,Standard,563.39,16831.05,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,173,0,Yes
+CU-0550,Female,37,Central,18,Basic,342.33,6226.85,DSL,Month-to-Month,Mailed Check,2,0,0,272,0,Yes
+CU-0551,Male,50,South,13,Standard,577.77,7767.83,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,74,0,Yes
+CU-0552,Male,50,North,21,Premium 5G,895.61,19515.53,DSL,One Year,Manual Bank Transfer,2,1,1,231,0,No
+CU-0553,Male,27,Central,2,Standard,587.42,1175.51,Fiber Optic,Two Year,Credit Card,3,0,1,175,0,Yes
+CU-0554,Male,51,Central,7,Basic,369.85,2604.53,DSL,One Year,Manual Bank Transfer,1,0,0,161,0,No
+CU-0555,Female,18,West,14,Standard,539.32,7471.56,DSL,Two Year,Mailed Check,1,0,0,233,1,No
+CU-0556,Male,35,West,34,Standard,587.95,20266.17,Fiber Optic,One Year,Credit Card,1,0,0,103,1,No
+CU-0557,Male,60,North,32,Basic,363.83,12037.47,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,0,184,0,Yes
+CU-0558,Female,64,South,25,Basic,367.29,9080.57,DSL,Month-to-Month,Mailed Check,1,0,1,134,0,Yes
+CU-0559,Male,19,Central,5,Premium 5G,954.08,4949.35,DSL,One Year,Mailed Check,2,1,0,224,1,Yes
+CU-0560,Male,51,North,32,Standard,526.34,16196.86,Fiber Optic,Month-to-Month,Credit Card,1,0,1,227,1,No
+CU-0561,Male,52,South,20,Basic,345.62,6826.72,No Internet,One Year,Auto Bank Transfer,1,0,1,280,1,No
+CU-0562,Male,42,Central,29,Premium 5G,930.51,27071.5,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,249,0,Yes
+CU-0563,Male,44,North,22,Basic,344.23,7796.31,DSL,One Year,Manual Bank Transfer,2,0,0,162,0,No
+CU-0564,Male,47,Central,15,Premium 5G,880.82,13669.6,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,55,0,Yes
+CU-0565,Female,60,West,72,Business Pro,1302.85,90161.75,Fiber Optic,Two Year,Manual Bank Transfer,4,1,0,25,0,No
+CU-0566,Male,54,South,8,Business Pro,1309.11,10847.45,DSL,Month-to-Month,Manual Bank Transfer,2,0,1,251,2,Yes
+CU-0567,Male,53,East,34,Standard,534.21,17979.77,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,232,2,Yes
+CU-0568,Male,58,West,5,Basic,289.72,1427.0,No Internet,One Year,Credit Card,1,0,1,28,1,Yes
+CU-0569,Male,56,West,72,Business Pro,1363.84,102017.6,Fiber Optic,One Year,Auto Bank Transfer,4,1,1,341,1,No
+CU-0570,Male,53,West,7,Standard,606.55,4235.27,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,112,1,Yes
+CU-0571,Male,31,South,19,Standard,573.69,10502.02,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,0,181,0,Yes
+CU-0572,Female,59,North,72,Premium 5G,962.93,67058.25,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,231,1,No
+CU-0573,Male,46,East,14,Standard,531.53,7572.49,Fiber Optic,One Year,Manual Bank Transfer,1,0,1,290,1,No
+CU-0574,Female,48,East,43,Standard,535.83,23053.56,Fiber Optic,Two Year,Mailed Check,2,0,1,212,0,No
+CU-0575,Female,39,Central,20,Premium 5G,869.41,17616.64,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,1,0,232,0,Yes
+CU-0576,Male,54,East,63,Standard,616.93,38415.54,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,0,135,1,No
+CU-0577,Female,69,South,29,Premium 5G,946.43,27425.95,No Internet,Month-to-Month,Credit Card,1,0,1,176,0,No
+CU-0578,Male,56,East,34,Standard,627.85,20840.07,DSL,One Year,Manual Bank Transfer,2,0,1,120,0,No
+CU-0579,Male,40,South,9,Standard,592.01,5264.74,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,198,2,Yes
+CU-0580,Female,48,West,42,Standard,543.37,22848.98,Fiber Optic,One Year,Auto Bank Transfer,1,0,1,236,0,No
+CU-0581,Female,38,Central,45,Standard,601.28,26080.71,DSL,One Year,Auto Bank Transfer,1,0,0,142,1,No
+CU-0582,Female,62,East,7,Standard,573.88,4213.67,Fiber Optic,Month-to-Month,Mailed Check,2,0,0,78,2,Yes
+CU-0583,Male,37,Central,25,Business Pro,1303.17,32452.09,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,103,2,No
+CU-0584,Male,37,North,9,Premium 5G,925.45,8400.59,DSL,One Year,Credit Card,2,1,0,116,0,No
+CU-0585,Male,49,Central,38,Standard,604.89,22277.34,DSL,Two Year,Mailed Check,1,0,1,222,1,No
+CU-0586,Male,51,North,23,Basic,365.7,8674.16,Fiber Optic,Month-to-Month,Auto Bank Transfer,4,1,0,42,1,Yes
+CU-0587,Male,26,East,28,Basic,330.59,9072.24,DSL,Month-to-Month,Credit Card,1,0,0,189,0,No
+CU-0588,Female,35,Central,55,Premium 5G,953.71,50573.85,Fiber Optic,Month-to-Month,Mailed Check,2,0,0,203,2,Yes
+CU-0589,Female,40,West,6,Premium 5G,900.97,5296.35,DSL,One Year,Mailed Check,1,0,0,166,0,Yes
+CU-0590,Female,35,West,72,Premium 5G,904.55,63946.82,Fiber Optic,One Year,Credit Card,1,0,0,0,2,No
+CU-0591,Female,40,West,8,Premium 5G,948.37,7421.87,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,1,0,318,4,Yes
+CU-0592,Male,28,North,40,Business Pro,1337.61,50859.31,DSL,Month-to-Month,Mailed Check,2,0,1,217,0,Yes
+CU-0593,Female,36,South,2,Standard,586.72,1125.92,No Internet,Two Year,Auto Bank Transfer,1,0,0,0,1,Yes
+CU-0594,Male,54,Central,6,Standard,598.24,3600.01,Fiber Optic,Month-to-Month,Mailed Check,4,1,0,135,0,Yes
+CU-0595,Female,39,East,7,Basic,335.45,2388.23,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,227,1,Yes
+CU-0596,Male,23,West,72,Basic,373.09,27489.35,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,3,3,Yes
+CU-0597,Female,20,North,14,Premium 5G,922.85,12676.2,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,87,2,Yes
+CU-0598,Male,18,East,4,Business Pro,1357.46,5256.44,Fiber Optic,Month-to-Month,Mailed Check,2,0,0,100,2,Yes
+CU-0599,Male,25,Central,58,Standard,605.67,34172.8,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,0,0,120,2,Yes
+CU-0600,Male,27,South,31,Basic,317.64,9424.91,Fiber Optic,One Year,Manual Bank Transfer,2,1,0,261,0,No
+CU-0601,Female,48,South,27,Basic,290.88,8196.46,DSL,Month-to-Month,Credit Card,3,0,1,112,0,No
+CU-0602,Female,57,North,72,Standard,577.52,41628.42,No Internet,Month-to-Month,Manual Bank Transfer,2,0,1,233,0,No
+CU-0603,Female,32,West,8,Basic,302.6,2480.01,DSL,Month-to-Month,Mailed Check,1,0,0,57,1,Yes
+CU-0604,Female,50,East,17,Standard,574.91,9308.23,DSL,One Year,Auto Bank Transfer,4,0,0,188,0,No
+CU-0605,Female,41,Central,10,Premium 5G,891.76,9274.51,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,1,0,218,2,Yes
+CU-0606,Female,25,North,26,Standard,535.15,13884.67,DSL,One Year,Manual Bank Transfer,1,0,1,179,1,No
+CU-0607,Female,35,North,21,Basic,319.33,6550.54,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,1,102,0,No
+CU-0608,Female,36,West,46,Premium 5G,898.19,42093.34,Fiber Optic,Month-to-Month,Auto Bank Transfer,4,1,1,297,0,No
+CU-0609,Male,31,South,2,Basic,339.4,708.62,DSL,One Year,Manual Bank Transfer,4,1,0,109,3,Yes
+CU-0610,Male,30,East,19,Standard,547.24,9913.95,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,132,1,Yes
+CU-0611,Male,43,South,1,Standard,597.32,619.36,No Internet,Month-to-Month,Manual Bank Transfer,4,1,0,168,0,Yes
+CU-0612,Female,18,South,22,Basic,297.55,6651.74,DSL,Month-to-Month,Mailed Check,4,0,0,128,1,Yes
+CU-0613,Female,51,East,72,Business Pro,1332.24,94942.94,DSL,Month-to-Month,Manual Bank Transfer,3,0,1,213,0,No
+CU-0614,Male,33,East,38,Standard,609.57,23582.0,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,275,2,No
+CU-0615,Male,18,Central,46,Standard,621.66,29471.46,Fiber Optic,Month-to-Month,Credit Card,1,0,0,162,1,Yes
+CU-0616,Female,48,Central,17,Standard,604.64,10519.82,Fiber Optic,Two Year,Credit Card,1,1,0,74,3,Yes
+CU-0617,Male,50,West,3,Premium 5G,943.78,2925.04,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,241,0,Yes
+CU-0618,Male,28,South,8,Business Pro,1309.38,10902.09,DSL,One Year,Auto Bank Transfer,2,0,0,355,0,No
+CU-0619,Male,56,West,42,Basic,294.02,11735.25,DSL,Month-to-Month,Credit Card,2,0,1,236,1,No
+CU-0620,Female,24,Central,4,Business Pro,1320.73,5319.45,No Internet,One Year,Credit Card,1,0,0,257,2,Yes
+CU-0621,Male,51,South,20,Standard,581.2,11874.5,DSL,One Year,Auto Bank Transfer,1,0,1,236,3,No
+CU-0622,Female,43,West,21,Premium 5G,917.28,20135.81,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,218,1,No
+CU-0623,Male,48,North,13,Basic,310.1,3963.94,DSL,One Year,Manual Bank Transfer,4,0,1,118,0,No
+CU-0624,Male,46,East,1,Standard,564.85,568.25,Fiber Optic,Two Year,Credit Card,1,0,1,225,0,Yes
+CU-0625,Male,27,West,26,Premium 5G,869.59,23705.6,No Internet,Two Year,Auto Bank Transfer,4,0,0,257,2,No
+CU-0626,Male,46,East,24,Basic,269.1,6624.48,No Internet,One Year,Mailed Check,2,0,0,61,0,No
+CU-0627,Female,44,North,19,Premium 5G,882.36,16946.8,Fiber Optic,Month-to-Month,Mailed Check,2,1,0,302,3,Yes
+CU-0628,Female,42,South,15,Basic,376.63,5699.41,Fiber Optic,One Year,Manual Bank Transfer,2,0,0,93,1,No
+CU-0629,Female,34,West,17,Business Pro,1375.2,23182.63,DSL,Month-to-Month,Mailed Check,1,1,1,143,1,Yes
+CU-0630,Female,49,East,10,Basic,297.92,2840.89,Fiber Optic,Month-to-Month,Credit Card,1,0,1,16,2,Yes
+CU-0631,Female,46,Central,4,Premium 5G,870.71,3533.68,Fiber Optic,Month-to-Month,Mailed Check,2,0,0,226,0,Yes
+CU-0632,Female,35,South,9,Business Pro,1364.46,12120.68,DSL,Two Year,Credit Card,2,1,0,195,1,No
+CU-0633,Female,75,West,11,Standard,533.42,5841.43,Fiber Optic,Two Year,Manual Bank Transfer,1,1,0,116,0,No
+CU-0634,Female,40,East,7,Standard,565.68,4102.46,Fiber Optic,One Year,Manual Bank Transfer,2,0,1,265,1,No
+CU-0635,Female,29,West,1,Standard,539.64,513.83,Fiber Optic,One Year,Mailed Check,1,1,1,145,1,Yes
+CU-0636,Male,23,East,10,Basic,291.57,2999.83,DSL,Month-to-Month,Auto Bank Transfer,2,1,1,216,4,Yes
+CU-0637,Male,45,East,7,Premium 5G,964.48,6839.78,Fiber Optic,One Year,Credit Card,1,0,0,130,0,No
+CU-0638,Male,48,West,36,Standard,610.46,21481.15,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,176,0,Yes
+CU-0639,Male,27,Central,38,Business Pro,1342.29,49658.62,No Internet,Month-to-Month,Manual Bank Transfer,1,0,1,247,3,Yes
+CU-0640,Male,39,West,23,Premium 5G,948.09,21799.03,DSL,One Year,Auto Bank Transfer,3,0,0,140,0,No
+CU-0641,Male,53,North,3,Standard,529.85,1608.48,DSL,One Year,Credit Card,3,0,0,274,2,Yes
+CU-0642,Female,39,South,8,Premium 5G,968.88,7546.17,No Internet,Month-to-Month,Mailed Check,1,1,0,193,0,Yes
+CU-0643,Female,20,North,6,Standard,546.86,3430.66,DSL,Month-to-Month,Manual Bank Transfer,1,1,0,170,1,Yes
+CU-0644,Male,45,West,38,Basic,314.88,11786.52,No Internet,Month-to-Month,Credit Card,4,0,1,135,2,Yes
+CU-0645,Male,75,West,3,Premium 5G,916.91,2633.09,Fiber Optic,Month-to-Month,Credit Card,1,0,0,146,0,Yes
+CU-0646,Male,35,West,4,Business Pro,1330.04,5151.47,DSL,One Year,Manual Bank Transfer,1,0,1,269,2,Yes
+CU-0647,Male,38,Central,49,Business Pro,1366.5,67237.63,Fiber Optic,One Year,Mailed Check,3,0,0,199,0,No
+CU-0648,Female,34,East,6,Business Pro,1285.84,7537.03,Fiber Optic,One Year,Manual Bank Transfer,3,0,1,115,0,No
+CU-0649,Female,49,South,5,Premium 5G,927.99,4535.43,Fiber Optic,One Year,Auto Bank Transfer,3,1,0,251,1,Yes
+CU-0650,Female,59,East,17,Standard,556.89,9650.55,Fiber Optic,Two Year,Credit Card,1,0,0,248,2,No
+CU-0651,Female,19,Central,21,Basic,315.71,6604.03,DSL,Month-to-Month,Mailed Check,1,0,0,158,0,Yes
+CU-0652,Female,70,North,4,Premium 5G,916.9,3592.29,DSL,Month-to-Month,Mailed Check,2,0,0,96,0,Yes
+CU-0653,Male,44,South,4,Basic,356.64,1440.85,Fiber Optic,Month-to-Month,Credit Card,2,0,0,226,0,Yes
+CU-0654,Male,42,West,35,Premium 5G,965.99,34281.5,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,120,1,No
+CU-0655,Female,36,West,19,Premium 5G,965.09,18212.52,Fiber Optic,One Year,Manual Bank Transfer,1,0,1,219,0,No
+CU-0656,Female,22,North,1,Business Pro,1334.13,1376.76,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,1,0,332,2,Yes
+CU-0657,Male,18,East,26,Basic,310.6,8245.21,DSL,One Year,Credit Card,1,1,0,372,0,No
+CU-0658,Male,75,Central,64,Standard,588.3,38951.74,DSL,Month-to-Month,Auto Bank Transfer,1,0,1,299,1,No
+CU-0659,Female,41,North,28,Standard,536.72,14759.19,DSL,Two Year,Credit Card,2,0,0,200,0,No
+CU-0660,Male,27,West,3,Standard,540.31,1573.66,Fiber Optic,Two Year,Manual Bank Transfer,4,0,1,136,0,Yes
+CU-0661,Male,64,East,64,Standard,607.11,38455.64,DSL,Two Year,Credit Card,1,0,0,198,3,No
+CU-0662,Female,41,Central,9,Premium 5G,962.23,8827.74,No Internet,One Year,Mailed Check,1,0,1,125,1,No
+CU-0663,Female,37,North,72,Premium 5G,972.04,72275.09,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,335,0,No
+CU-0664,Female,33,Central,18,Premium 5G,915.5,16728.64,DSL,Month-to-Month,Credit Card,1,1,0,176,0,No
+CU-0665,Male,36,West,21,Business Pro,1334.76,26670.14,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,306,0,No
+CU-0666,Female,37,Central,40,Business Pro,1321.57,54064.89,DSL,Month-to-Month,Credit Card,1,0,0,144,0,Yes
+CU-0667,Female,70,South,20,Basic,372.42,7643.6,No Internet,Month-to-Month,Credit Card,4,0,0,218,1,No
+CU-0668,Female,46,South,5,Premium 5G,926.69,4856.28,Fiber Optic,Month-to-Month,Credit Card,2,0,0,234,0,Yes
+CU-0669,Male,41,Central,5,Premium 5G,894.19,4482.86,Fiber Optic,One Year,Mailed Check,3,0,0,86,0,Yes
+CU-0670,Female,69,North,34,Basic,300.16,10204.05,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,240,2,Yes
+CU-0671,Female,63,West,53,Basic,342.47,18706.97,DSL,Month-to-Month,Credit Card,4,0,1,178,2,Yes
+CU-0672,Female,18,Central,30,Premium 5G,890.58,27175.49,DSL,Month-to-Month,Auto Bank Transfer,1,0,1,210,0,No
+CU-0673,Male,34,East,12,Premium 5G,934.55,11376.5,Fiber Optic,Month-to-Month,Credit Card,1,1,1,194,0,No
+CU-0674,Female,38,South,13,Basic,358.83,4737.17,Fiber Optic,Month-to-Month,Auto Bank Transfer,3,0,0,0,0,Yes
+CU-0675,Male,61,North,21,Business Pro,1340.6,28082.91,No Internet,Month-to-Month,Credit Card,2,0,0,198,0,No
+CU-0676,Female,18,Central,3,Standard,550.58,1586.44,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,1,0,181,0,Yes
+CU-0677,Female,35,South,34,Standard,559.55,18198.73,Fiber Optic,One Year,Mailed Check,2,0,0,221,1,No
+CU-0678,Male,32,West,13,Basic,334.23,4456.19,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,163,1,Yes
+CU-0679,Male,41,South,4,Standard,575.58,2322.76,Fiber Optic,One Year,Credit Card,1,0,1,25,1,Yes
+CU-0680,Male,26,South,24,Standard,525.62,12086.93,Fiber Optic,Month-to-Month,Credit Card,2,0,0,226,1,Yes
+CU-0681,Female,33,West,48,Standard,541.98,26730.83,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,1,0,234,0,Yes
+CU-0682,Male,26,North,72,Premium 5G,907.68,68005.48,No Internet,Month-to-Month,Credit Card,2,0,0,86,2,No
+CU-0683,Female,48,Central,18,Standard,557.93,10435.87,DSL,Month-to-Month,Credit Card,1,0,0,259,0,No
+CU-0684,Male,58,South,67,Premium 5G,919.37,62024.88,Fiber Optic,One Year,Mailed Check,1,0,1,247,1,No
+CU-0685,Male,58,East,29,Basic,334.6,10029.14,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,281,0,No
+CU-0686,Male,45,South,25,Premium 5G,943.37,23246.96,Fiber Optic,One Year,Credit Card,1,0,1,60,1,No
+CU-0687,Male,42,West,57,Standard,569.64,32685.29,DSL,Month-to-Month,Credit Card,2,0,0,192,0,No
+CU-0688,Female,21,West,2,Business Pro,1366.59,2667.37,DSL,Two Year,Manual Bank Transfer,2,0,0,231,0,Yes
+CU-0689,Female,45,Central,39,Business Pro,1307.1,51483.5,No Internet,Month-to-Month,Mailed Check,1,0,0,310,1,Yes
+CU-0690,Female,40,South,19,Basic,369.28,6923.89,DSL,Month-to-Month,Mailed Check,1,0,1,149,0,Yes
+CU-0691,Male,27,North,12,Standard,570.73,7033.29,DSL,One Year,Auto Bank Transfer,4,1,0,56,0,No
+CU-0692,Male,43,Central,32,Business Pro,1298.98,43126.09,Fiber Optic,Month-to-Month,Credit Card,1,0,1,221,0,Yes
+CU-0693,Female,25,West,72,Standard,537.97,39956.7,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,226,0,No
+CU-0694,Male,46,North,13,Standard,612.64,8183.86,DSL,Month-to-Month,Credit Card,4,0,0,245,0,Yes
+CU-0695,Female,36,West,1,Premium 5G,958.35,925.96,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,0,1,342,0,Yes
+CU-0696,Male,43,West,1,Standard,557.5,561.98,DSL,Month-to-Month,Manual Bank Transfer,1,1,1,121,3,Yes
+CU-0697,Female,30,East,6,Premium 5G,931.6,5523.97,DSL,Month-to-Month,Mailed Check,2,0,1,135,1,Yes
+CU-0698,Male,25,West,33,Premium 5G,902.2,29809.62,Fiber Optic,One Year,Auto Bank Transfer,2,1,1,217,1,No
+CU-0699,Female,34,North,14,Premium 5G,916.24,12752.05,DSL,Month-to-Month,Credit Card,1,0,0,246,0,Yes
+CU-0700,Female,36,South,9,Premium 5G,960.81,8697.78,DSL,Month-to-Month,Mailed Check,3,0,0,47,0,Yes
+CU-0701,Female,60,Central,36,Standard,557.63,19795.84,No Internet,One Year,Manual Bank Transfer,4,0,0,83,2,No
+CU-0702,Female,28,North,19,Standard,546.6,10482.81,DSL,Month-to-Month,Auto Bank Transfer,4,0,0,104,0,Yes
+CU-0703,Female,49,Central,8,Standard,608.84,4998.02,DSL,Month-to-Month,Mailed Check,3,0,0,149,0,Yes
+CU-0704,Female,66,Central,10,Standard,599.38,5719.48,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,139,0,Yes
+CU-0705,Female,48,Central,39,Premium 5G,901.7,33613.93,DSL,Two Year,Manual Bank Transfer,2,0,0,119,2,No
+CU-0706,Male,28,North,44,Basic,360.74,15301.6,No Internet,One Year,Auto Bank Transfer,2,0,0,210,1,No
+CU-0707,Female,36,West,39,Standard,531.7,20607.59,Fiber Optic,One Year,Auto Bank Transfer,1,0,0,90,2,No
+CU-0708,Male,40,West,35,Standard,545.85,19542.27,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,151,0,No
+CU-0709,Female,40,East,16,Basic,290.93,4620.17,Fiber Optic,One Year,Manual Bank Transfer,2,0,0,246,1,No
+CU-0710,Female,58,West,4,Premium 5G,898.61,3575.97,No Internet,Two Year,Mailed Check,3,0,1,307,1,Yes
+CU-0711,Male,35,South,13,Basic,279.86,3607.59,DSL,Two Year,Manual Bank Transfer,2,0,0,244,1,No
+CU-0712,Female,35,North,22,Premium 5G,909.69,19911.07,DSL,One Year,Auto Bank Transfer,1,1,0,265,2,No
+CU-0713,Male,37,East,25,Standard,596.59,14791.67,Fiber Optic,Month-to-Month,Credit Card,1,0,0,125,0,Yes
+CU-0714,Female,24,West,57,Premium 5G,895.15,48886.62,Fiber Optic,Month-to-Month,Credit Card,4,0,0,128,2,Yes
+CU-0715,Female,29,Central,72,Premium 5G,932.26,64539.6,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,225,0,No
+CU-0716,Male,43,Central,9,Standard,605.57,5475.21,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,192,1,Yes
+CU-0717,Male,59,North,17,Standard,587.33,9488.91,No Internet,Month-to-Month,Auto Bank Transfer,2,0,0,192,0,Yes
+CU-0718,Male,64,South,30,Standard,556.03,16267.95,Fiber Optic,Two Year,Auto Bank Transfer,4,0,1,120,0,No
+CU-0719,Female,60,West,33,Standard,568.72,18020.74,DSL,Month-to-Month,Mailed Check,1,0,1,73,2,Yes
+CU-0720,Male,64,North,20,Premium 5G,959.38,18462.86,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,162,0,Yes
+CU-0721,Male,28,Central,40,Standard,598.66,23626.3,DSL,Two Year,Credit Card,2,1,1,179,1,No
+CU-0722,Male,60,South,27,Standard,523.9,14547.65,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,117,1,No
+CU-0723,Female,50,North,72,Premium 5G,910.53,67450.74,DSL,Month-to-Month,Manual Bank Transfer,1,1,1,87,2,No
+CU-0724,Male,39,South,29,Basic,359.1,9966.14,Fiber Optic,One Year,Credit Card,1,1,0,174,0,No
+CU-0725,Female,36,East,29,Basic,363.21,10737.85,Fiber Optic,Two Year,Auto Bank Transfer,4,1,0,163,1,No
+CU-0726,Male,69,South,41,Standard,582.85,22878.76,DSL,Two Year,Credit Card,1,0,0,203,1,No
+CU-0727,Female,58,Central,2,Standard,595.54,1244.81,DSL,Month-to-Month,Auto Bank Transfer,1,0,1,222,0,Yes
+CU-0728,Male,44,North,3,Business Pro,1290.82,3968.72,DSL,One Year,Credit Card,1,0,0,102,1,Yes
+CU-0729,Female,41,East,3,Basic,323.51,932.35,DSL,Month-to-Month,Credit Card,1,0,0,174,0,Yes
+CU-0730,Male,46,East,6,Standard,527.36,3225.99,DSL,Month-to-Month,Credit Card,2,1,0,123,0,Yes
+CU-0731,Male,50,South,8,Basic,323.63,2565.05,Fiber Optic,Two Year,Manual Bank Transfer,2,0,1,118,1,No
+CU-0732,Male,18,West,41,Basic,269.62,10548.99,DSL,Month-to-Month,Mailed Check,1,0,1,244,3,Yes
+CU-0733,Female,69,East,20,Basic,316.49,6414.65,DSL,Month-to-Month,Manual Bank Transfer,4,0,1,187,1,No
+CU-0734,Male,31,Central,47,Premium 5G,901.57,42634.88,Fiber Optic,One Year,Auto Bank Transfer,1,0,1,149,1,No
+CU-0735,Male,40,West,35,Basic,343.05,12603.73,Fiber Optic,Month-to-Month,Mailed Check,1,1,1,73,0,Yes
+CU-0736,Male,55,East,9,Premium 5G,916.75,8298.99,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,264,2,Yes
+CU-0737,Male,37,South,38,Standard,628.9,24708.57,Fiber Optic,Two Year,Auto Bank Transfer,2,0,0,200,0,No
+CU-0738,Female,55,East,56,Premium 5G,903.57,52995.96,DSL,Two Year,Mailed Check,4,1,1,0,0,No
+CU-0739,Male,51,Central,43,Premium 5G,921.74,39970.16,No Internet,One Year,Mailed Check,1,0,1,239,1,No
+CU-0740,Female,32,West,17,Basic,287.67,4645.95,Fiber Optic,Month-to-Month,Auto Bank Transfer,4,0,1,146,1,Yes
+CU-0741,Male,18,West,15,Standard,580.68,8987.08,Fiber Optic,One Year,Auto Bank Transfer,2,0,1,179,2,No
+CU-0742,Female,57,East,6,Business Pro,1369.64,8619.84,No Internet,Two Year,Mailed Check,1,0,1,159,0,No
+CU-0743,Female,52,North,10,Premium 5G,934.3,9359.82,Fiber Optic,One Year,Mailed Check,1,0,0,148,1,Yes
+CU-0744,Female,38,East,7,Premium 5G,970.71,7016.66,DSL,Month-to-Month,Mailed Check,1,0,1,214,0,Yes
+CU-0745,Male,46,Central,3,Premium 5G,908.61,2601.93,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,202,1,Yes
+CU-0746,Female,53,North,24,Basic,363.67,8682.29,No Internet,Month-to-Month,Auto Bank Transfer,2,0,0,89,1,No
+CU-0747,Male,30,West,71,Basic,286.11,21248.27,DSL,Two Year,Mailed Check,4,1,0,135,0,No
+CU-0748,Female,40,South,19,Business Pro,1316.16,25931.83,Fiber Optic,Two Year,Manual Bank Transfer,4,1,0,163,1,No
+CU-0749,Male,37,South,28,Premium 5G,901.62,25270.96,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,209,0,Yes
+CU-0750,Male,55,South,6,Premium 5G,919.39,5677.58,DSL,One Year,Manual Bank Transfer,1,1,1,124,0,No
+CU-0751,Female,55,West,34,Standard,608.19,20548.35,DSL,One Year,Credit Card,1,0,0,184,0,No
+CU-0752,Male,36,South,2,Standard,546.05,1089.56,No Internet,One Year,Credit Card,2,0,1,246,1,Yes
+CU-0753,Female,49,West,24,Standard,586.34,14141.47,DSL,Month-to-Month,Auto Bank Transfer,1,0,1,136,0,No
+CU-0754,Male,53,Central,4,Basic,281.42,1117.94,Fiber Optic,Month-to-Month,Credit Card,1,0,0,278,0,Yes
+CU-0755,Male,50,South,2,Standard,607.23,1249.55,Fiber Optic,Month-to-Month,Credit Card,3,0,0,204,1,Yes
+CU-0756,Male,35,South,24,Standard,544.54,13563.95,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,340,2,Yes
+CU-0757,Male,25,North,37,Premium 5G,944.92,34694.01,No Internet,Month-to-Month,Credit Card,2,0,0,166,0,Yes
+CU-0758,Female,18,East,7,Premium 5G,936.33,6473.62,DSL,Month-to-Month,Credit Card,1,0,1,302,0,Yes
+CU-0759,Female,37,South,23,Standard,530.64,11933.68,No Internet,One Year,Credit Card,1,1,1,77,2,No
+CU-0760,Male,18,Central,5,Basic,343.75,1687.04,Fiber Optic,Month-to-Month,Mailed Check,4,1,1,243,4,Yes
+CU-0761,Male,35,South,3,Standard,527.28,1514.35,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,0,0,Yes
+CU-0762,Male,45,West,10,Basic,272.62,2754.86,Fiber Optic,One Year,Credit Card,4,0,0,185,2,Yes
+CU-0763,Female,44,East,72,Premium 5G,954.64,70632.1,Fiber Optic,One Year,Mailed Check,1,0,1,121,0,No
+CU-0764,Male,62,West,36,Standard,523.33,18582.24,Fiber Optic,Month-to-Month,Credit Card,1,1,1,140,0,No
+CU-0765,Female,50,East,70,Premium 5G,892.76,63922.06,Fiber Optic,Two Year,Mailed Check,2,1,0,298,0,No
+CU-0766,Male,65,South,6,Business Pro,1346.21,8074.13,Fiber Optic,Two Year,Auto Bank Transfer,4,0,0,75,2,No
+CU-0767,Male,67,South,23,Premium 5G,907.63,20486.95,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,114,3,Yes
+CU-0768,Female,50,South,26,Basic,280.4,7019.62,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,232,1,Yes
+CU-0769,Male,30,Central,2,Basic,341.18,706.58,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,206,1,Yes
+CU-0770,Male,58,North,23,Basic,360.36,8168.47,DSL,Two Year,Auto Bank Transfer,3,1,0,64,0,No
+CU-0771,Female,44,North,24,Basic,351.29,8086.58,DSL,One Year,Mailed Check,1,1,0,155,1,No
+CU-0772,Male,46,North,43,Standard,585.01,24290.74,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,135,1,Yes
+CU-0773,Female,38,West,4,Basic,281.34,1133.59,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,1,1,208,0,Yes
+CU-0774,Female,74,South,47,Premium 5G,889.76,39991.31,Fiber Optic,Month-to-Month,Mailed Check,4,0,0,98,0,Yes
+CU-0775,Female,42,Central,7,Basic,269.67,1889.17,No Internet,One Year,Credit Card,1,1,0,92,1,No
+CU-0776,Female,39,South,50,Business Pro,1370.93,70585.2,Fiber Optic,One Year,Manual Bank Transfer,1,0,0,57,1,No
+CU-0777,Male,47,North,28,Standard,542.39,14996.08,DSL,Month-to-Month,Credit Card,1,0,0,153,1,No
+CU-0778,Female,50,West,29,Basic,337.32,10189.84,DSL,One Year,Credit Card,2,1,1,225,0,No
+CU-0779,Male,46,East,72,Basic,364.04,25742.63,No Internet,Month-to-Month,Auto Bank Transfer,1,1,1,192,0,No
+CU-0780,Male,33,East,55,Basic,369.71,21002.02,No Internet,Month-to-Month,Credit Card,1,0,1,190,0,No
+CU-0781,Male,24,Central,8,Basic,277.66,2204.88,No Internet,Month-to-Month,Credit Card,1,1,0,146,1,Yes
+CU-0782,Female,36,Central,72,Standard,588.85,42741.62,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,1,122,1,No
+CU-0783,Female,49,North,20,Standard,553.2,11068.13,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,156,4,Yes
+CU-0784,Female,46,Central,31,Business Pro,1339.26,41050.66,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,335,2,Yes
+CU-0785,Female,58,East,23,Business Pro,1364.29,32603.76,DSL,Month-to-Month,Mailed Check,2,0,1,147,1,Yes
+CU-0786,Female,61,South,20,Premium 5G,915.16,17564.81,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,241,0,Yes
+CU-0787,Female,46,Central,33,Standard,593.62,20106.62,No Internet,Month-to-Month,Manual Bank Transfer,2,0,0,154,2,Yes
+CU-0788,Male,18,East,45,Business Pro,1324.58,58100.12,Fiber Optic,One Year,Manual Bank Transfer,2,0,0,149,0,No
+CU-0789,Male,41,Central,23,Standard,560.8,13367.0,Fiber Optic,One Year,Mailed Check,2,0,0,81,2,Yes
+CU-0790,Male,56,East,5,Premium 5G,915.99,4621.87,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,0,0,149,0,Yes
+CU-0791,Female,41,East,34,Basic,291.22,10190.57,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,89,0,Yes
+CU-0792,Male,30,West,20,Basic,368.41,7668.17,Fiber Optic,Two Year,Manual Bank Transfer,1,0,0,184,0,No
+CU-0793,Male,26,East,65,Standard,599.76,40742.1,DSL,Month-to-Month,Manual Bank Transfer,2,0,0,214,1,No
+CU-0794,Female,42,North,5,Basic,341.23,1763.65,DSL,Two Year,Mailed Check,2,0,1,173,0,Yes
+CU-0795,Female,45,West,8,Standard,536.77,4432.85,Fiber Optic,One Year,Credit Card,1,0,0,305,0,No
+CU-0796,Male,35,Central,4,Basic,328.7,1354.11,DSL,Two Year,Manual Bank Transfer,2,0,1,150,0,Yes
+CU-0797,Male,49,North,8,Standard,560.23,4367.2,Fiber Optic,Month-to-Month,Credit Card,1,1,1,171,0,Yes
+CU-0798,Female,65,Central,22,Basic,275.1,5751.12,DSL,One Year,Manual Bank Transfer,1,0,0,165,1,No
+CU-0799,Female,30,West,5,Standard,564.93,2768.32,Fiber Optic,Two Year,Credit Card,4,0,0,158,0,Yes
+CU-0800,Female,39,North,72,Basic,321.63,23244.44,Fiber Optic,One Year,Manual Bank Transfer,3,0,0,86,0,No
+CU-0801,Male,46,South,10,Business Pro,1326.21,13130.41,Fiber Optic,One Year,Auto Bank Transfer,2,0,1,114,0,No
+CU-0802,Male,32,West,18,Standard,618.8,11277.17,DSL,Month-to-Month,Mailed Check,3,0,0,163,0,Yes
+CU-0803,Female,44,East,3,Standard,564.26,1729.19,Fiber Optic,Month-to-Month,Mailed Check,1,1,1,159,0,Yes
+CU-0804,Male,38,North,21,Premium 5G,955.49,20848.05,Fiber Optic,Two Year,Credit Card,1,1,0,219,1,No
+CU-0805,Female,57,Central,14,Business Pro,1316.14,18164.99,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,1,181,1,No
+CU-0806,Female,48,West,5,Basic,300.09,1526.47,DSL,One Year,Manual Bank Transfer,1,1,1,318,1,Yes
+CU-0807,Female,46,West,15,Basic,282.19,4328.47,Fiber Optic,One Year,Manual Bank Transfer,1,0,1,264,0,No
+CU-0808,Male,62,Central,52,Business Pro,1281.5,69091.27,DSL,One Year,Mailed Check,2,0,0,335,0,No
+CU-0809,Female,58,West,56,Basic,303.17,17450.21,Fiber Optic,Two Year,Credit Card,1,0,1,165,2,No
+CU-0810,Male,59,West,12,Basic,344.81,4336.55,No Internet,Month-to-Month,Mailed Check,2,0,1,220,0,No
+CU-0811,Male,56,West,72,Standard,614.36,46239.01,Fiber Optic,One Year,Credit Card,1,0,1,212,0,No
+CU-0812,Male,27,North,10,Basic,351.81,3470.86,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,31,1,Yes
+CU-0813,Male,38,Central,64,Standard,628.87,40566.52,DSL,One Year,Manual Bank Transfer,1,0,0,199,0,No
+CU-0814,Male,59,East,12,Standard,548.56,6602.19,No Internet,Two Year,Credit Card,4,0,1,46,3,No
+CU-0815,Female,37,Central,1,Standard,625.57,637.77,Fiber Optic,Month-to-Month,Credit Card,4,1,1,233,0,Yes
+CU-0816,Male,39,East,11,Standard,609.66,6884.8,DSL,One Year,Auto Bank Transfer,1,1,1,147,0,No
+CU-0817,Male,32,North,21,Standard,555.4,11712.91,No Internet,Month-to-Month,Manual Bank Transfer,1,0,1,159,1,No
+CU-0818,Male,66,Central,27,Basic,336.48,9004.98,Fiber Optic,Two Year,Credit Card,1,1,0,224,1,No
+CU-0819,Female,43,North,12,Premium 5G,970.7,12017.03,DSL,Month-to-Month,Credit Card,1,0,0,183,0,Yes
+CU-0820,Female,27,East,3,Standard,524.64,1557.5,DSL,One Year,Auto Bank Transfer,2,0,1,265,2,Yes
+CU-0821,Male,18,West,5,Standard,582.0,3017.08,No Internet,Month-to-Month,Credit Card,1,1,1,126,2,Yes
+CU-0822,Female,48,North,1,Standard,580.11,598.96,Fiber Optic,Two Year,Mailed Check,1,0,1,126,0,Yes
+CU-0823,Male,41,West,6,Business Pro,1352.77,8275.89,DSL,Month-to-Month,Credit Card,3,0,0,139,0,Yes
+CU-0824,Female,53,Central,14,Premium 5G,871.71,12417.9,No Internet,Month-to-Month,Auto Bank Transfer,1,0,1,143,1,No
+CU-0825,Female,54,Central,5,Standard,572.2,2926.47,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,1,1,274,0,Yes
+CU-0826,Male,50,East,6,Basic,300.66,1758.57,Fiber Optic,Month-to-Month,Credit Card,4,1,0,120,0,Yes
+CU-0827,Female,57,East,19,Premium 5G,915.35,18007.34,Fiber Optic,Month-to-Month,Credit Card,1,1,1,159,1,Yes
+CU-0828,Male,44,East,20,Basic,304.62,5921.77,No Internet,One Year,Mailed Check,1,0,1,54,2,No
+CU-0829,Female,52,East,1,Basic,343.67,352.17,DSL,Month-to-Month,Credit Card,1,0,0,185,2,Yes
+CU-0830,Male,39,South,2,Standard,551.56,1083.95,No Internet,Month-to-Month,Manual Bank Transfer,2,0,0,226,4,Yes
+CU-0831,Male,40,West,21,Standard,578.39,11778.87,Fiber Optic,Month-to-Month,Credit Card,1,1,1,164,0,No
+CU-0832,Female,36,East,16,Standard,615.05,9380.41,No Internet,One Year,Mailed Check,3,1,0,237,1,No
+CU-0833,Female,36,North,56,Business Pro,1338.79,76951.92,DSL,Month-to-Month,Credit Card,1,0,0,223,3,Yes
+CU-0834,Male,26,North,67,Premium 5G,929.61,63968.11,DSL,One Year,Mailed Check,4,0,0,122,1,No
+CU-0835,Male,46,East,45,Basic,292.65,12559.74,DSL,Two Year,Credit Card,2,0,1,199,1,No
+CU-0836,Male,48,East,12,Premium 5G,884.71,10303.31,Fiber Optic,One Year,Mailed Check,4,0,0,250,0,No
+CU-0837,Male,18,North,13,Premium 5G,891.78,11450.59,DSL,One Year,Manual Bank Transfer,1,0,1,173,0,No
+CU-0838,Female,41,Central,14,Premium 5G,871.12,11722.73,No Internet,Month-to-Month,Manual Bank Transfer,1,0,1,45,0,No
+CU-0839,Female,59,North,9,Standard,570.22,5388.41,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,188,0,Yes
+CU-0840,Female,45,North,72,Standard,594.11,41652.26,Fiber Optic,Two Year,Auto Bank Transfer,2,0,1,264,0,No
+CU-0841,Female,38,East,7,Premium 5G,887.06,5933.71,DSL,Two Year,Credit Card,4,0,0,118,0,No
+CU-0842,Male,53,North,20,Standard,621.06,12119.79,DSL,Month-to-Month,Manual Bank Transfer,4,1,1,253,1,No
+CU-0843,Female,30,Central,14,Basic,375.62,5513.27,DSL,Two Year,Manual Bank Transfer,3,1,0,187,1,No
+CU-0844,Male,52,West,21,Standard,613.53,12370.79,DSL,One Year,Credit Card,2,1,0,205,0,No
+CU-0845,Male,42,West,22,Premium 5G,903.78,19851.16,Fiber Optic,Two Year,Manual Bank Transfer,1,1,1,108,0,No
+CU-0846,Male,55,West,37,Standard,572.01,22156.27,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,1,1,75,0,No
+CU-0847,Male,31,West,61,Premium 5G,919.26,55575.23,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,119,0,No
+CU-0848,Male,63,South,9,Business Pro,1301.81,12004.73,No Internet,Two Year,Auto Bank Transfer,2,0,0,99,0,No
+CU-0849,Male,55,South,23,Basic,364.95,8324.89,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,1,198,1,No
+CU-0850,Male,32,East,12,Basic,308.08,3636.91,Fiber Optic,One Year,Mailed Check,1,0,0,204,1,No
+CU-0851,Male,31,East,46,Basic,288.83,12642.61,DSL,Month-to-Month,Mailed Check,1,0,1,296,1,No
+CU-0852,Male,28,West,53,Standard,553.68,30639.8,Fiber Optic,Two Year,Credit Card,1,0,0,203,0,No
+CU-0853,Female,41,West,11,Business Pro,1331.83,14610.01,Fiber Optic,One Year,Auto Bank Transfer,1,0,1,296,2,No
+CU-0854,Male,49,North,17,Business Pro,1269.12,22425.61,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,154,0,No
+CU-0855,Female,25,Central,72,Business Pro,1357.84,94716.03,DSL,Month-to-Month,Auto Bank Transfer,2,0,0,151,0,No
+CU-0856,Male,36,South,26,Premium 5G,929.45,24600.82,No Internet,One Year,Credit Card,4,0,1,207,0,No
+CU-0857,Female,57,East,6,Standard,555.09,3437.23,DSL,Month-to-Month,Auto Bank Transfer,2,1,0,240,0,Yes
+CU-0858,Male,44,Central,30,Standard,577.43,18005.05,DSL,Month-to-Month,Manual Bank Transfer,4,0,0,116,3,Yes
+CU-0859,Female,36,North,30,Basic,350.58,10720.83,DSL,Month-to-Month,Mailed Check,4,0,1,298,0,No
+CU-0860,Female,41,North,4,Standard,548.86,2149.7,DSL,One Year,Manual Bank Transfer,1,0,1,221,0,Yes
+CU-0861,Female,72,West,7,Business Pro,1312.69,9279.79,DSL,Month-to-Month,Credit Card,1,1,0,166,1,Yes
+CU-0862,Female,64,East,43,Standard,600.12,24845.56,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,71,0,Yes
+CU-0863,Male,45,Central,23,Basic,292.17,6574.01,Fiber Optic,Month-to-Month,Manual Bank Transfer,1,0,0,183,2,Yes
+CU-0864,Female,51,Central,25,Business Pro,1313.24,31408.18,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,33,1,Yes
+CU-0865,Female,45,North,6,Premium 5G,953.08,5912.83,DSL,Two Year,Credit Card,2,0,0,227,0,No
+CU-0866,Male,52,Central,31,Premium 5G,918.6,28540.04,Fiber Optic,One Year,Credit Card,1,1,0,132,2,No
+CU-0867,Female,26,Central,15,Basic,274.26,4009.6,DSL,One Year,Mailed Check,4,0,0,57,1,No
+CU-0868,Male,25,East,24,Basic,369.89,9126.81,DSL,Two Year,Auto Bank Transfer,1,0,1,214,0,No
+CU-0869,Male,47,East,3,Basic,347.67,998.66,No Internet,One Year,Auto Bank Transfer,2,0,0,152,2,Yes
+CU-0870,Male,51,East,28,Basic,367.9,10134.43,Fiber Optic,One Year,Manual Bank Transfer,1,0,0,85,0,No
+CU-0871,Female,29,South,29,Premium 5G,961.58,26861.21,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,161,1,No
+CU-0872,Female,32,South,3,Premium 5G,922.56,2848.06,No Internet,Month-to-Month,Manual Bank Transfer,2,1,1,105,3,Yes
+CU-0873,Male,33,Central,22,Standard,573.33,12630.19,DSL,Month-to-Month,Mailed Check,1,0,1,245,1,No
+CU-0874,Female,56,South,1,Standard,566.53,569.47,Fiber Optic,One Year,Manual Bank Transfer,1,0,0,201,1,Yes
+CU-0875,Male,49,Central,20,Standard,591.24,11407.03,Fiber Optic,Month-to-Month,Mailed Check,2,0,1,23,2,Yes
+CU-0876,Female,18,South,23,Basic,357.6,8085.15,DSL,Month-to-Month,Credit Card,2,0,1,197,1,Yes
+CU-0877,Female,49,Central,1,Standard,624.23,617.44,Fiber Optic,Two Year,Mailed Check,1,0,1,311,1,Yes
+CU-0878,Male,29,South,37,Basic,330.9,11936.42,Fiber Optic,Month-to-Month,Mailed Check,1,0,0,261,1,Yes
+CU-0879,Female,42,East,25,Standard,593.11,15167.65,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,1,0,166,0,Yes
+CU-0880,Female,27,West,53,Premium 5G,930.7,47967.77,Fiber Optic,One Year,Mailed Check,2,0,0,269,0,No
+CU-0881,Male,36,West,10,Premium 5G,960.56,9766.78,Fiber Optic,One Year,Mailed Check,1,0,0,158,1,Yes
+CU-0882,Female,29,West,1,Premium 5G,958.8,1000.25,No Internet,Month-to-Month,Credit Card,3,0,1,150,2,Yes
+CU-0883,Male,21,West,9,Standard,565.21,4863.65,Fiber Optic,One Year,Manual Bank Transfer,1,0,1,0,0,No
+CU-0884,Female,55,South,11,Basic,298.31,3249.97,Fiber Optic,Month-to-Month,Credit Card,4,0,1,173,0,Yes
+CU-0885,Female,69,East,17,Premium 5G,977.5,16520.3,Fiber Optic,One Year,Auto Bank Transfer,2,0,1,260,1,No
+CU-0886,Male,44,North,72,Business Pro,1298.91,93612.95,DSL,One Year,Manual Bank Transfer,4,1,0,168,0,No
+CU-0887,Male,35,North,14,Business Pro,1316.25,18489.74,No Internet,Month-to-Month,Mailed Check,1,1,0,302,0,Yes
+CU-0888,Male,43,North,32,Basic,373.38,11423.37,No Internet,Month-to-Month,Auto Bank Transfer,1,1,1,253,2,Yes
+CU-0889,Male,46,West,72,Basic,284.34,20616.47,Fiber Optic,One Year,Manual Bank Transfer,3,1,0,289,1,No
+CU-0890,Female,44,East,17,Premium 5G,886.09,15289.17,DSL,Month-to-Month,Manual Bank Transfer,1,1,1,57,2,Yes
+CU-0891,Male,31,East,29,Business Pro,1347.53,37268.24,DSL,One Year,Auto Bank Transfer,2,0,1,335,1,No
+CU-0892,Female,55,South,4,Basic,295.46,1158.99,No Internet,One Year,Auto Bank Transfer,1,0,1,366,0,Yes
+CU-0893,Male,24,West,29,Premium 5G,956.17,26597.78,DSL,One Year,Manual Bank Transfer,4,0,1,154,3,Yes
+CU-0894,Female,34,East,36,Standard,623.61,23433.84,DSL,Month-to-Month,Credit Card,4,1,1,121,1,No
+CU-0895,Male,50,Central,4,Premium 5G,961.02,3964.98,Fiber Optic,Month-to-Month,Credit Card,2,1,0,338,0,Yes
+CU-0896,Male,53,Central,72,Basic,340.04,24002.17,No Internet,One Year,Mailed Check,2,0,0,183,2,No
+CU-0897,Female,45,Central,23,Standard,599.75,13960.99,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,109,1,No
+CU-0898,Male,42,Central,17,Standard,569.06,9526.45,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,1,135,0,No
+CU-0899,Male,51,South,11,Standard,617.35,6788.56,Fiber Optic,Two Year,Mailed Check,2,0,0,139,2,Yes
+CU-0900,Female,53,South,2,Premium 5G,978.23,2018.35,No Internet,One Year,Auto Bank Transfer,2,0,1,240,1,Yes
+CU-0901,Female,35,South,72,Basic,292.41,20170.36,Fiber Optic,Month-to-Month,Mailed Check,2,1,1,198,1,No
+CU-0902,Male,47,South,2,Premium 5G,911.98,1872.49,Fiber Optic,Month-to-Month,Mailed Check,2,0,0,225,0,Yes
+CU-0903,Male,56,East,72,Standard,611.73,42636.44,DSL,Month-to-Month,Mailed Check,1,0,0,173,1,No
+CU-0904,Male,28,North,17,Standard,562.98,9437.44,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,61,2,Yes
+CU-0905,Female,36,Central,26,Basic,321.02,8635.79,DSL,One Year,Mailed Check,2,0,1,246,0,No
+CU-0906,Male,18,North,15,Premium 5G,952.45,14431.66,DSL,Month-to-Month,Credit Card,4,1,1,342,0,No
+CU-0907,Female,46,West,14,Basic,287.49,3889.74,DSL,Month-to-Month,Credit Card,1,0,0,234,1,No
+CU-0908,Female,46,South,51,Premium 5G,941.36,46632.28,DSL,Month-to-Month,Mailed Check,4,0,0,268,0,Yes
+CU-0909,Male,47,South,45,Premium 5G,945.76,42712.14,No Internet,Month-to-Month,Mailed Check,1,1,0,0,1,Yes
+CU-0910,Male,60,North,8,Premium 5G,882.18,7325.11,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,0,0,1,Yes
+CU-0911,Male,63,South,12,Business Pro,1373.55,16839.41,Fiber Optic,One Year,Credit Card,2,0,0,194,0,No
+CU-0912,Female,42,West,45,Premium 5G,905.32,40884.56,DSL,One Year,Manual Bank Transfer,1,1,1,145,0,No
+CU-0913,Female,44,South,51,Basic,330.04,17302.85,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,160,1,No
+CU-0914,Female,57,East,5,Standard,611.86,3153.18,Fiber Optic,Month-to-Month,Mailed Check,1,0,1,232,1,Yes
+CU-0915,Female,60,North,19,Standard,548.58,9960.27,Fiber Optic,Month-to-Month,Manual Bank Transfer,2,0,1,85,0,No
+CU-0916,Male,34,Central,3,Standard,546.62,1708.0,No Internet,One Year,Credit Card,1,0,0,93,0,Yes
+CU-0917,Male,48,Central,2,Business Pro,1364.58,2690.21,No Internet,One Year,Auto Bank Transfer,4,0,1,336,4,Yes
+CU-0918,Female,75,West,36,Standard,586.07,21570.59,DSL,One Year,Auto Bank Transfer,1,0,0,324,2,No
+CU-0919,Female,40,West,44,Premium 5G,898.17,37610.27,Fiber Optic,Two Year,Credit Card,4,0,0,267,0,No
+CU-0920,Female,45,East,63,Standard,558.97,35671.38,Fiber Optic,Month-to-Month,Mailed Check,1,1,0,314,1,Yes
+CU-0921,Male,43,South,24,Basic,306.75,7491.41,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,119,0,Yes
+CU-0922,Male,41,North,1,Standard,549.65,543.79,DSL,Month-to-Month,Credit Card,3,0,1,58,1,Yes
+CU-0923,Female,33,East,65,Premium 5G,931.08,62860.33,Fiber Optic,One Year,Manual Bank Transfer,2,1,1,320,0,No
+CU-0924,Male,32,North,32,Premium 5G,890.58,28408.29,No Internet,Month-to-Month,Credit Card,1,1,0,191,0,No
+CU-0925,Male,57,West,62,Premium 5G,903.77,57509.33,DSL,One Year,Credit Card,1,0,1,252,1,No
+CU-0926,Female,50,North,6,Standard,570.33,3394.55,No Internet,Month-to-Month,Mailed Check,1,0,0,302,1,Yes
+CU-0927,Female,24,Central,61,Standard,526.61,31634.78,DSL,One Year,Mailed Check,3,0,0,190,0,No
+CU-0928,Female,40,South,23,Standard,532.02,12580.03,DSL,One Year,Auto Bank Transfer,2,0,0,200,0,No
+CU-0929,Female,44,West,14,Basic,324.28,4567.74,DSL,Month-to-Month,Credit Card,3,1,1,172,0,No
+CU-0930,Male,37,West,72,Basic,317.53,22752.64,DSL,One Year,Auto Bank Transfer,1,0,0,159,1,No
+CU-0931,Female,20,West,19,Standard,622.27,11950.03,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,300,2,Yes
+CU-0932,Female,46,West,6,Premium 5G,950.52,5565.73,DSL,Two Year,Manual Bank Transfer,2,1,0,246,0,No
+CU-0933,Female,21,North,35,Premium 5G,888.56,29703.97,Fiber Optic,Month-to-Month,Mailed Check,3,0,1,216,0,Yes
+CU-0934,Female,48,North,72,Premium 5G,935.44,70656.14,DSL,Month-to-Month,Mailed Check,3,0,1,51,0,No
+CU-0935,Male,26,South,36,Basic,365.93,12915.55,Fiber Optic,Month-to-Month,Manual Bank Transfer,3,0,1,143,2,Yes
+CU-0936,Male,57,East,72,Standard,595.29,40756.04,DSL,One Year,Auto Bank Transfer,1,0,0,173,1,No
+CU-0937,Male,57,South,14,Basic,285.68,3836.37,DSL,Month-to-Month,Credit Card,2,0,0,168,0,No
+CU-0938,Female,49,South,18,Basic,306.67,5286.48,Fiber Optic,One Year,Credit Card,3,0,1,73,0,No
+CU-0939,Female,45,South,7,Premium 5G,919.27,6370.63,Fiber Optic,Month-to-Month,Mailed Check,4,1,1,97,0,Yes
+CU-0940,Male,45,Central,7,Standard,533.08,3722.1,Fiber Optic,Month-to-Month,Credit Card,2,1,0,74,0,Yes
+CU-0941,Male,28,South,1,Standard,586.05,567.96,DSL,One Year,Manual Bank Transfer,1,0,1,137,1,Yes
+CU-0942,Male,36,Central,13,Standard,621.71,8316.6,DSL,Month-to-Month,Credit Card,1,0,1,200,3,Yes
+CU-0943,Male,24,East,17,Premium 5G,896.22,15388.82,DSL,Month-to-Month,Manual Bank Transfer,1,0,0,298,0,Yes
+CU-0944,Male,61,North,72,Standard,607.57,45079.21,No Internet,Month-to-Month,Manual Bank Transfer,1,0,0,211,0,No
+CU-0945,Male,18,North,27,Standard,575.19,15086.15,Fiber Optic,Two Year,Credit Card,2,0,1,193,2,No
+CU-0946,Male,71,West,1,Standard,544.09,525.45,Fiber Optic,Two Year,Manual Bank Transfer,1,0,1,233,2,Yes
+CU-0947,Female,32,West,8,Premium 5G,939.29,7443.59,No Internet,Month-to-Month,Mailed Check,1,0,0,104,2,Yes
+CU-0948,Male,61,North,72,Basic,289.82,21509.78,DSL,One Year,Manual Bank Transfer,1,0,0,147,0,No
+CU-0949,Female,48,East,4,Standard,590.9,2443.55,No Internet,Month-to-Month,Auto Bank Transfer,1,0,0,137,0,Yes
+CU-0950,Male,52,North,13,Premium 5G,908.18,12353.88,No Internet,Two Year,Manual Bank Transfer,1,0,0,124,1,No
+CU-0951,Male,49,East,46,Basic,345.09,15183.89,No Internet,Month-to-Month,Manual Bank Transfer,4,0,0,249,0,No
+CU-0952,Male,18,South,46,Basic,378.27,17746.21,DSL,Month-to-Month,Auto Bank Transfer,1,0,0,231,0,Yes
+CU-0953,Female,51,North,6,Business Pro,1376.91,7864.92,Fiber Optic,Month-to-Month,Credit Card,1,0,1,244,1,Yes
+CU-0954,Female,18,South,13,Basic,269.37,3578.79,Fiber Optic,Month-to-Month,Mailed Check,4,0,0,107,0,Yes
+CU-0955,Female,39,North,6,Standard,575.42,3463.96,Fiber Optic,One Year,Manual Bank Transfer,1,1,0,237,1,No
+CU-0956,Male,40,Central,1,Premium 5G,961.62,982.81,Fiber Optic,Month-to-Month,Auto Bank Transfer,2,1,1,86,2,Yes
+CU-0957,Female,55,North,18,Standard,534.89,9679.05,DSL,Month-to-Month,Credit Card,3,0,1,173,1,No
+CU-0958,Female,25,South,32,Basic,303.96,9541.91,Fiber Optic,One Year,Auto Bank Transfer,2,0,0,235,0,No
+CU-0959,Female,18,South,38,Standard,567.99,20702.65,Fiber Optic,Month-to-Month,Mailed Check,1,1,0,158,2,Yes
+CU-0960,Male,19,East,1,Premium 5G,871.52,903.1,DSL,Month-to-Month,Mailed Check,3,0,0,76,2,Yes
+CU-0961,Female,22,South,49,Basic,343.75,16924.55,DSL,One Year,Manual Bank Transfer,3,1,1,180,1,No
+CU-0962,Female,49,South,18,Basic,349.95,6328.39,No Internet,Month-to-Month,Credit Card,1,0,0,286,0,Yes
+CU-0963,Male,60,North,30,Standard,601.68,18267.85,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,93,2,Yes
+CU-0964,Female,61,West,12,Standard,539.47,6339.0,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,76,0,No
+CU-0965,Male,43,West,7,Standard,548.55,4025.86,No Internet,Two Year,Mailed Check,3,0,0,275,1,No
+CU-0966,Female,53,West,33,Premium 5G,942.78,31558.61,DSL,Month-to-Month,Mailed Check,1,0,1,310,1,Yes
+CU-0967,Male,20,Central,5,Business Pro,1334.05,6417.58,DSL,Two Year,Credit Card,1,1,0,191,1,Yes
+CU-0968,Male,41,West,38,Premium 5G,972.65,36584.65,DSL,One Year,Credit Card,4,0,0,104,0,No
+CU-0969,Female,57,North,1,Standard,565.8,544.7,DSL,One Year,Manual Bank Transfer,1,0,1,308,2,Yes
+CU-0970,Female,46,East,20,Standard,599.93,11722.64,DSL,Two Year,Auto Bank Transfer,2,0,0,107,0,No
+CU-0971,Female,47,Central,45,Standard,598.01,26471.49,Fiber Optic,Month-to-Month,Auto Bank Transfer,1,0,1,214,1,No
+CU-0972,Female,27,North,34,Standard,566.21,20016.06,DSL,Month-to-Month,Manual Bank Transfer,2,0,1,213,0,No
+CU-0973,Male,52,East,32,Basic,312.48,10482.49,DSL,Month-to-Month,Auto Bank Transfer,1,0,1,121,0,No
+CU-0974,Male,35,South,15,Business Pro,1312.11,19490.47,Fiber Optic,One Year,Auto Bank Transfer,3,0,0,183,1,No
+CU-0975,Male,25,Central,64,Basic,294.52,19610.27,DSL,One Year,Mailed Check,2,0,0,204,1,No
+CU-0976,Female,18,South,2,Business Pro,1319.46,2754.61,DSL,Two Year,Credit Card,2,0,0,176,1,No
+CU-0977,Female,34,North,35,Standard,600.2,20800.6,DSL,One Year,Auto Bank Transfer,2,1,0,181,1,No
+CU-0978,Female,52,East,16,Standard,581.81,8879.81,Fiber Optic,Two Year,Manual Bank Transfer,1,0,1,235,1,No
+CU-0979,Male,38,North,15,Premium 5G,903.44,13394.62,No Internet,Two Year,Auto Bank Transfer,2,0,1,275,1,No
+CU-0980,Male,48,Central,20,Basic,309.82,5946.49,DSL,Two Year,Mailed Check,1,0,0,89,2,No
+CU-0981,Female,33,West,10,Premium 5G,906.52,8844.11,No Internet,One Year,Auto Bank Transfer,1,1,0,64,0,No
+CU-0982,Male,27,West,17,Basic,331.56,5609.26,Fiber Optic,Month-to-Month,Mailed Check,4,0,0,244,1,Yes
+CU-0983,Female,30,South,12,Business Pro,1299.51,15134.53,DSL,One Year,Mailed Check,2,0,0,294,0,No
+CU-0984,Male,36,West,9,Standard,533.04,4942.5,Fiber Optic,Two Year,Auto Bank Transfer,1,1,0,147,0,No
+CU-0985,Female,35,East,2,Basic,299.66,601.15,Fiber Optic,Month-to-Month,Credit Card,1,1,0,169,0,Yes
+CU-0986,Female,39,West,22,Basic,331.01,6974.09,Fiber Optic,Two Year,Credit Card,1,1,1,230,1,No
+CU-0987,Female,18,East,9,Standard,573.29,5116.58,DSL,Month-to-Month,Auto Bank Transfer,1,0,1,182,1,Yes
+CU-0988,Female,43,North,4,Business Pro,1309.67,5304.58,Fiber Optic,Month-to-Month,Auto Bank Transfer,4,0,0,95,0,Yes
+CU-0989,Female,41,West,13,Basic,332.33,4459.48,Fiber Optic,Two Year,Auto Bank Transfer,1,0,0,168,0,No
+CU-0990,Male,36,East,2,Basic,323.31,623.55,DSL,Month-to-Month,Credit Card,1,0,0,248,1,Yes
+CU-0991,Male,37,South,19,Basic,343.7,6524.74,Fiber Optic,Two Year,Manual Bank Transfer,1,0,0,132,1,No
+CU-0992,Female,32,South,31,Standard,539.92,16271.36,Fiber Optic,One Year,Auto Bank Transfer,1,0,1,184,1,No
+CU-0993,Male,52,Central,44,Basic,286.51,12804.96,No Internet,Two Year,Auto Bank Transfer,2,0,0,166,0,No
+CU-0994,Male,74,Central,72,Standard,622.16,42589.75,Fiber Optic,One Year,Auto Bank Transfer,2,1,1,235,0,No
+CU-0995,Male,31,South,12,Basic,305.86,3630.47,No Internet,Month-to-Month,Mailed Check,1,1,1,176,0,No
+CU-0996,Female,32,North,26,Premium 5G,940.78,23637.11,DSL,Month-to-Month,Credit Card,1,1,0,206,1,No
+CU-0997,Male,20,South,4,Standard,536.34,2196.06,DSL,Month-to-Month,Manual Bank Transfer,1,0,1,106,1,Yes
+CU-0998,Male,35,South,72,Standard,580.53,42335.85,No Internet,Month-to-Month,Mailed Check,1,0,0,271,3,Yes
+CU-0999,Female,54,West,20,Basic,295.78,6205.89,Fiber Optic,Two Year,Auto Bank Transfer,1,0,1,165,3,No
+CU-1000,Male,41,East,4,Standard,584.37,2353.56,DSL,One Year,Auto Bank Transfer,2,0,0,212,1,Yes

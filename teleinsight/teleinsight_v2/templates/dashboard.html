@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block page_name %}Overview Dashboard{% endblock %}
+{% block breadcrumb %}Analytics Summary{% endblock %}
+{% block accuracy_chip %}<div class="acc-chip">● Live Data</div>{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-title">Customer Analytics Overview</div>
+  <div class="ph-sub">
+    {{ stats.total or 0 | int }} customers loaded &nbsp;·&nbsp;
+    {% if has_data %}<span style="color:var(--ok);font-weight:600;">● Your Dataset Active</span>
+    {% else %}<span style="color:var(--warn);font-weight:600;">⚡ Sample Dataset Active</span>{% endif %}
+    &nbsp;·&nbsp; Ensemble ML Model Ready
+  </div>
+</div>
+
+<!-- STAT CARDS -->
+<div class="sr">
+  <div class="sc bl">
+    <div class="sc-head"><div class="sc-lbl">Total Customers</div>
+    <div class="sc-ico bl"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ stats.total or 0 }}">0</div>
+    <div class="sc-sub">Loaded in dataset</div>
+  </div>
+  <div class="sc gr">
+    <div class="sc-head"><div class="sc-lbl">Active Customers</div>
+    <div class="sc-ico gr"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ stats.active or 0 }}">0</div>
+    <div class="sc-sub up">↑ Non-churned customers</div>
+  </div>
+  <div class="sc rd">
+    <div class="sc-head"><div class="sc-lbl">Predicted Churn</div>
+    <div class="sc-ico rd"><svg viewBox="0 0 24 24"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ stats.churn_count or 0 }}">0</div>
+    <div class="sc-sub dn">{{ stats.churn_pct or 0 }}% churn rate</div>
+  </div>
+  <div class="sc pu">
+    <div class="sc-head"><div class="sc-lbl">Avg Monthly Revenue</div>
+    <div class="sc-ico pu"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ stats.avg_monthly or 0 }}" data-pre="₹">₹0</div>
+    <div class="sc-sub">Per customer / month</div>
+  </div>
+</div>
+
+<!-- CHARTS ROW 1 -->
+<div class="g21 mb20">
+  <div class="card">
+    <div class="ch"><div><div class="ct">Customer Activity Trend</div><div class="cs">Active vs Churned — Last 12 months</div></div><span class="plain-chip" style="background:var(--pa);color:var(--p);font-size:11.5px;font-weight:700;">2025–2026</span></div>
+    <div class="cb"><canvas id="lineChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Churn Distribution</div><div class="cs">Active vs At-risk</div></div></div>
+    <div class="cb"><canvas id="statusPie"></canvas></div>
+  </div>
+</div>
+
+<!-- CHARTS ROW 2 -->
+<div class="g3 mb20">
+  <div class="card">
+    <div class="ch"><div><div class="ct">Plan Distribution</div><div class="cs">Customers by subscription</div></div></div>
+    <div class="cb"><canvas id="planBar"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Churn by Region</div><div class="cs">Geographic risk map</div></div></div>
+    <div class="cb"><canvas id="regionBar"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Contract Types</div><div class="cs">Customer contract split</div></div></div>
+    <div class="cb"><canvas id="contractDonut"></canvas></div>
+  </div>
+</div>
+
+<!-- QUICK LINKS -->
+<div class="g3">
+  {% for href,label,sub,bg,stroke,ico in [
+    ('/upload','Upload Dataset','Load CSV or Excel file','#eff6ff','#2563eb','M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12'),
+    ('/segmentation','Run Segmentation','K-Means customer clustering','#f5f3ff','#7c3aed','M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3'),
+    ('/churn','Churn Prediction','Ensemble ML — 90%+ accuracy','#fef2f2','#ef4444','M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0-3.42 0zM12 9v4M12 17h.01')
+  ] %}
+  <a href="{{ href }}" style="text-decoration:none">
+    <div class="card" style="padding:18px 20px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='var(--sh2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="width:44px;height:44px;border-radius:12px;background:{{ bg }};display:grid;place-items:center;flex-shrink:0">
+        <svg width="20" height="20" fill="none" stroke="{{ stroke }}" stroke-width="2" viewBox="0 0 24 24"><path d="{{ ico }}"/></svg>
+      </div>
+      <div>
+        <div style="font-weight:700;font-size:14px">{{ label }}</div>
+        <div style="font-size:12px;color:var(--t2)">{{ sub }}</div>
+      </div>
+      <svg style="margin-left:auto;flex-shrink:0" width="16" height="16" fill="none" stroke="var(--t3)" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const st = {{ stats | tojson }};
+mk('lineChart','line',{
+  labels:st.months||[],
+  datasets:[
+    {label:'Active',data:st.active_trend||[],borderColor:C.bl,backgroundColor:C.bla,fill:true,tension:.45,borderWidth:2.5,pointRadius:3,pointHoverRadius:6,pointBackgroundColor:C.bl},
+    {label:'Churned',data:st.churn_trend||[],borderColor:C.rd,backgroundColor:C.rda,fill:true,tension:.45,borderWidth:2.5,pointRadius:3,pointHoverRadius:6,pointBackgroundColor:C.rd}
+  ]
+},{plugins:{legend:{position:'top'}},scales:{y:{grid:{color:C.grid},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:11}}}}});
+
+mk('statusPie','doughnut',{
+  labels:['Active','Churned'],
+  datasets:[{data:[st.active||0,st.churn_count||0],backgroundColor:[C.gr,C.rd],borderWidth:0,hoverOffset:6}]
+},{cutout:'60%'});
+
+const pd=st.plan_dist||{};
+mk('planBar','bar',{
+  labels:Object.keys(pd),
+  datasets:[{label:'Customers',data:Object.values(pd),backgroundColor:[C.cy,C.bl,C.pu,'#1345b7'],borderRadius:7,borderSkipped:false}]
+},{plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid}},x:{grid:{display:false}}}});
+
+const rc=st.region_churn||{};
+mk('regionBar','bar',{
+  labels:Object.keys(rc),
+  datasets:[{label:'Churn Count',data:Object.values(rc),backgroundColor:C.rd,borderRadius:7,borderSkipped:false}]
+},{plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid}},x:{grid:{display:false}}}});
+
+const cd=st.contract_dist||{};
+mk('contractDonut','doughnut',{
+  labels:Object.keys(cd),
+  datasets:[{data:Object.values(cd),backgroundColor:[C.bl,C.gr,C.cy],borderWidth:0,hoverOffset:6}]
+},{cutout:'55%'});
+</script>
+{% endblock %}

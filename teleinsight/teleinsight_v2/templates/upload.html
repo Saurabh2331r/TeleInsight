@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Upload Data{% endblock %}
+{% block page_name %}Upload Dataset{% endblock %}
+{% block breadcrumb %}Data Management{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-title">Upload Customer Dataset</div>
+  <div class="ph-sub">CSV or Excel file — columns auto-detected, ML models run instantly</div>
+</div>
+
+{% if msg %}<div class="al al-ok"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><strong>Success!</strong> {{ msg }}</div></div>{% endif %}
+{% if error %}<div class="al al-bad"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1" fill="currentColor" stroke="none"/></svg><div><strong>Error:</strong> {{ error }}</div></div>{% endif %}
+
+<div class="g21 mb20">
+  <div class="card" style="padding:24px">
+    <div style="margin-bottom:18px"><div class="ct">File Upload</div><div class="cs">Drag & drop or click to browse</div></div>
+    <form method="POST" enctype="multipart/form-data" id="uForm">
+      <div class="dz" id="dz" onclick="document.getElementById('fi').click()"
+        ondragover="dzEv(event,'ov')" ondragleave="dzEv(event,'')" ondrop="dzDrop(event)">
+        <div class="dz-ico"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg></div>
+        <div class="dz-t" id="dzt">Drag & drop your file here</div>
+        <div class="dz-s">or click to browse — max 32MB</div>
+        <div class="dz-tags">
+          <span class="dz-tag">📊 CSV</span>
+          <span class="dz-tag">📗 XLSX</span>
+          <span class="dz-tag">📘 XLS</span>
+        </div>
+      </div>
+      <input type="file" name="file" id="fi" accept=".csv,.xlsx,.xls" style="display:none" onchange="fSel(this)"/>
+      <div id="pgWrap" style="display:none" class="pg-wrap">
+        <div class="pg-lbl"><span id="pgName">Uploading…</span><span id="pgPct">0%</span></div>
+        <div class="pg-track"><div class="pg-fill" id="pgFill" style="width:0%"></div></div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+        <button type="submit" class="btn btn-p" id="ubtn">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          Upload & Analyze
+        </button>
+        <button type="reset" class="btn btn-s" onclick="resetF()">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <div>
+    <div class="card mb16" style="margin-bottom:14px">
+      <div class="ch"><div class="ct">Required Columns</div></div>
+      <div style="padding:0 18px 16px">
+        {% for col,desc in [('CustomerID','Unique ID'),('Tenure','Months with company'),('MonthlyCharges','Monthly bill amount'),('Plan','Subscription plan'),('Contract','Contract type'),('Complaints','Number of complaints'),('Churn','Yes / No label')] %}
+        <div class="mr"><span class="ml">{{ col }}</span><span style="font-size:12px;color:var(--t2)">{{ desc }}</span></div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="al al-info" style="margin-bottom:0">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <div style="font-size:12.5px">No dataset? <a href="/api/use-sample" style="color:var(--p);font-weight:700">Load sample data</a> — 1,000 telecom customers ready.</div>
+    </div>
+  </div>
+</div>
+
+{% if preview %}
+<div class="card">
+  <div class="ch">
+    <div><div class="ct">Data Preview</div><div class="cs">First 8 rows of uploaded dataset</div></div>
+    <div style="display:flex;gap:8px">
+      <span class="plain-chip" style="background:var(--pa);color:var(--p);font-weight:700;font-size:12px">{{ row_count | int }} rows</span>
+      <span class="plain-chip" style="background:var(--br2);color:var(--t2);font-weight:700;font-size:12px">{{ col_count }} cols</span>
+    </div>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr>{% for c in columns %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for row in preview %}<tr>{% for c in columns %}<td class="mono" style="font-size:12.5px">{{ row.get(c,'') }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table>
+  </div>
+  <div style="padding:14px 18px;border-top:1px solid var(--br);display:flex;gap:10px">
+    <a href="/segmentation" class="btn btn-p">Run Segmentation →</a>
+    <a href="/churn" class="btn btn-s">Run Churn Prediction →</a>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+function dzEv(e,cls){e.preventDefault();document.getElementById('dz').classList.toggle('ov',cls==='ov')}
+function dzDrop(e){
+  e.preventDefault();document.getElementById('dz').classList.remove('ov');
+  if(e.dataTransfer.files[0]){
+    const fi=document.getElementById('fi');
+    const dt=new DataTransfer();dt.items.add(e.dataTransfer.files[0]);fi.files=dt.files;
+    fSel(fi);setTimeout(()=>document.getElementById('uForm').requestSubmit(),100);
+  }
+}
+function fSel(inp){if(inp.files[0])document.getElementById('dzt').textContent='📄 '+inp.files[0].name}
+function resetF(){document.getElementById('dzt').textContent='Drag & drop your file here'}
+document.getElementById('uForm').addEventListener('submit',()=>{
+  const pw=document.getElementById('pgWrap'),pf=document.getElementById('pgFill'),pp=document.getElementById('pgPct');
+  pw.style.display='block';let v=0;
+  const iv=setInterval(()=>{v+=Math.random()*12+4;if(v>=88){v=88;clearInterval(iv);}pf.style.width=v+'%';pp.textContent=Math.round(v)+'%';},120);
+});
+</script>
+{% endblock %}

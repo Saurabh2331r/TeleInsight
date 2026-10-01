@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}Segmentation{% endblock %}
+{% block page_name %}Customer Segmentation{% endblock %}
+{% block breadcrumb %}K-Means Clustering{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-title">Customer Segmentation</div>
+  <div class="ph-sub">K-Means clustering with RobustScaler — {% if result %}{{ result.n_clusters }} segments from {{ result.total | int }} customers &nbsp;·&nbsp; Inertia: {{ result.inertia }}{% endif %}</div>
+</div>
+{% if error %}<div class="al al-bad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg><div>{{ error }} — <a href="/upload" style="color:var(--bad2);font-weight:700">Upload Data</a></div></div>{% endif %}
+
+{% if result %}
+<!-- CLUSTER STAT CARDS -->
+<div class="sr mb20">
+{% for cl in result.clusters %}
+<div class="sc" style="border-top:3px solid {{ cl.color }}">
+  <div class="sc-head">
+    <div class="sc-lbl" style="color:{{ cl.color }}">Cluster {{ cl.id }}</div>
+    <div class="sc-ico" style="background:{{ cl.bg }};width:40px;height:40px;border-radius:11px">
+      <svg width="18" height="18" fill="none" stroke="{{ cl.color }}" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+    </div>
+  </div>
+  <div class="sc-val mono" data-count="{{ cl.count }}">0</div>
+  <div style="margin-top:6px"><span class="plain-chip" style="background:{{ cl.bg }};color:{{ cl.tc }};font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:20px">{{ cl.name }}</span></div>
+</div>
+{% endfor %}
+</div>
+
+<!-- CHARTS -->
+<div class="g21 mb20">
+  <div class="card">
+    <div class="ch"><div><div class="ct">Segment Size Comparison</div><div class="cs">Customer count per cluster</div></div></div>
+    <div class="cb"><canvas id="segBar"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Cluster Proportion</div><div class="cs">% of total base</div></div></div>
+    <div class="cb"><canvas id="segPie"></canvas></div>
+    <div class="cb"><div class="leg">{% for cl in result.clusters %}<div class="li"><div class="cdot" style="background:{{ cl.color }}"></div>{{ cl.name }}</div>{% endfor %}</div></div>
+  </div>
+</div>
+
+<div class="g3 mb20">
+  <div class="card">
+    <div class="ch"><div><div class="ct">Avg Monthly Charges</div><div class="cs">Revenue by segment</div></div></div>
+    <div class="cb"><canvas id="chargesBar"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Average Tenure</div><div class="cs">Loyalty months</div></div></div>
+    <div class="cb"><canvas id="tenureBar"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Churn Rate by Segment</div><div class="cs">% predicted churn</div></div></div>
+    <div class="cb"><canvas id="churnBar"></canvas></div>
+  </div>
+</div>
+
+<!-- TABLE -->
+<div class="card">
+  <div class="ch">
+    <div><div class="ct">Cluster Summary Table</div><div class="cs">Full stats and strategic recommendations</div></div>
+    <span class="plain-chip" style="background:var(--pa);color:var(--p);font-weight:700;font-size:12px">{{ result.n_clusters }} Segments</span>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>#</th><th>Segment</th><th>Customers</th><th>Avg Tenure</th><th>Avg Charges</th><th>Avg Complaints</th><th>Churn Rate</th><th>Top Internet</th><th>Strategy</th></tr></thead>
+      <tbody>
+      {% for cl in result.clusters %}
+      <tr>
+        <td class="mono" style="font-weight:700;color:{{ cl.color }}">{{ cl.id }}</td>
+        <td><span class="plain-chip" style="background:{{ cl.bg }};color:{{ cl.tc }};font-weight:700;font-size:12px;padding:4px 12px;border-radius:20px">{{ cl.name }}</span></td>
+        <td class="mono">{{ "{:,}".format(cl.count) }}</td>
+        <td>{{ cl.avg_tenure }} mo</td>
+        <td class="mono">₹{{ "{:,.0f}".format(cl.avg_charges) }}</td>
+        <td class="mono">{{ cl.avg_complaints }}</td>
+        <td>
+          {% if cl.churn_rate > 35 %}<span class="chip rd">{{ cl.churn_rate }}%</span>
+          {% elif cl.churn_rate > 18 %}<span class="chip yw">{{ cl.churn_rate }}%</span>
+          {% else %}<span class="chip gr">{{ cl.churn_rate }}%</span>{% endif %}
+        </td>
+        <td>{{ cl.internet }}</td>
+        <td style="font-size:12px;color:var(--t2)">{{ cl.strategy }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}{% if result %}<script>
+const cls={{ result.clusters|tojson }};
+const names=cls.map(c=>c.name),sizes=cls.map(c=>c.count),colors=cls.map(c=>c.color);
+
+mk('segBar','bar',{labels:names,datasets:[{label:'Customers',data:sizes,backgroundColor:colors,borderRadius:8,borderSkipped:false}]},
+  {plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid}},x:{grid:{display:false}}}});
+
+mk('segPie','doughnut',{labels:names,datasets:[{data:sizes,backgroundColor:colors,borderWidth:0,hoverOffset:8}]},{cutout:'55%',plugins:{legend:{display:false}}});
+
+mk('chargesBar','bar',{labels:names,datasets:[{label:'Avg ₹',data:cls.map(c=>c.avg_charges),backgroundColor:colors,borderRadius:8,borderSkipped:false}]},
+  {plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid}},x:{grid:{display:false}}}});
+
+mk('tenureBar','bar',{labels:names,datasets:[{label:'Months',data:cls.map(c=>c.avg_tenure),backgroundColor:colors,borderRadius:8,borderSkipped:false}]},
+  {plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid}},x:{grid:{display:false}}}});
+
+mk('churnBar','bar',{labels:names,datasets:[{label:'Churn %',data:cls.map(c=>c.churn_rate),backgroundColor:cls.map(c=>c.churn_rate>35?C.rd:c.churn_rate>18?C.yw:C.gr),borderRadius:8,borderSkipped:false}]},
+  {plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid},max:100},x:{grid:{display:false}}}});
+</script>{% endif %}{% endblock %}

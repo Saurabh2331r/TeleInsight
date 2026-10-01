@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% block title %}Churn Prediction{% endblock %}
+{% block page_name %}Churn Prediction{% endblock %}
+{% block breadcrumb %}Ensemble ML Model{% endblock %}
+{% block accuracy_chip %}{% if result and result.accuracy %}<div class="acc-chip">🎯 Accuracy: {{ result.accuracy }}%</div>{% endif %}{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-title">Churn Prediction Engine</div>
+  <div class="ph-sub">
+    Gradient Boosting + Random Forest + Extra Trees Ensemble &nbsp;·&nbsp;
+    {% if result and result.accuracy %}<span style="color:var(--ok);font-weight:700">Accuracy: {{ result.accuracy }}% &nbsp;|&nbsp; AUC-ROC: {{ result.auc }}%</span>{% endif %}
+  </div>
+</div>
+
+{% if error %}<div class="al al-bad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/></svg><div>{{ error }} — <a href="/upload" style="color:var(--bad2);font-weight:700">Upload Data</a></div></div>{% endif %}
+
+{% if result %}
+<!-- STAT CARDS -->
+<div class="sr mb20">
+  <div class="sc rd">
+    <div class="sc-head"><div class="sc-lbl">Predicted Churn</div>
+    <div class="sc-ico rd"><svg viewBox="0 0 24 24"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ result.churn_count }}">0</div>
+    <div class="sc-sub dn">{{ "%.1f"|format(result.churn_count/result.total*100) }}% of total base</div>
+  </div>
+  <div class="sc gr">
+    <div class="sc-head"><div class="sc-lbl">Retained</div>
+    <div class="sc-ico gr"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ result.retain_count }}">0</div>
+    <div class="sc-sub up">{{ "%.1f"|format(result.retain_count/result.total*100) }}% of base</div>
+  </div>
+  <div class="sc bl">
+    <div class="sc-head"><div class="sc-lbl">Model Accuracy</div>
+    <div class="sc-ico bl"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div></div>
+    <div class="sc-val mono">{{ result.accuracy or 'N/A' }}%</div>
+    <div class="sc-sub up">AUC-ROC: {{ result.auc or 'N/A' }}%</div>
+  </div>
+  <div class="sc pu">
+    <div class="sc-head"><div class="sc-lbl">High Risk (&gt;70%)</div>
+    <div class="sc-ico pu"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg></div></div>
+    <div class="sc-val mono" data-count="{{ result.high_risk }}">0</div>
+    <div class="sc-sub dn">Needs immediate action</div>
+  </div>
+</div>
+
+<!-- CHARTS ROW -->
+<div class="g21 mb20">
+  <div class="card">
+    <div class="ch"><div><div class="ct">Churn vs Retained — Monthly Trend</div><div class="cs">12-month analysis</div></div><span class="plain-chip" style="background:var(--pa);color:var(--p);font-size:11.5px;font-weight:700">12 Months</span></div>
+    <div class="cb"><canvas id="churnLine"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div><div class="ct">Overall Split</div><div class="cs">Churn vs Retained</div></div></div>
+    <div class="cb"><canvas id="churnDonut"></canvas></div>
+  </div>
+</div>
+
+<!-- ML METRICS + FEATURE IMPORTANCE -->
+{% if result.report %}
+<div class="g2 mb20">
+  <!-- Model performance -->
+  <div class="card" style="padding:22px">
+    <div style="margin-bottom:18px"><div class="ct">Model Performance Metrics</div><div class="cs">Ensemble: GBM + Random Forest + Extra Trees</div></div>
+    <div class="g2" style="margin-bottom:20px">
+      {% for label,val,color in [('Precision',result.report.precision,'#2563eb'),('Recall',result.report.recall,'#10b981'),('F1 Score',result.report.f1,'#f59e0b'),('CV Accuracy',result.report.cv_mean,'#7c3aed')] %}
+      <div style="text-align:center;padding:16px;background:var(--br2);border-radius:12px">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--t2);margin-bottom:8px">{{ label }}</div>
+        <div style="font-size:28px;font-weight:800;color:{{ color }};font-family:'JetBrains Mono',monospace">{{ val }}%</div>
+        {% if label == 'CV Accuracy' %}<div style="font-size:11px;color:var(--t2);margin-top:4px">±{{ result.report.cv_std }}% (5-fold)</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Confusion matrix -->
+    <div style="margin-bottom:8px"><div class="ct" style="font-size:13px">Confusion Matrix</div></div>
+    <div class="cm-grid">
+      <div class="cm-cell" style="background:#ecfdf5"><div class="cm-val" style="color:#065f46">{{ result.confusion_matrix[0][0] }}</div><div class="cm-lbl" style="color:#065f46">True Negative</div></div>
+      <div class="cm-cell" style="background:#fef2f2"><div class="cm-val" style="color:#991b1b">{{ result.confusion_matrix[0][1] }}</div><div class="cm-lbl" style="color:#991b1b">False Positive</div></div>
+      <div class="cm-cell" style="background:#fffbeb"><div class="cm-val" style="color:#92400e">{{ result.confusion_matrix[1][0] }}</div><div class="cm-lbl" style="color:#92400e">False Negative</div></div>
+      <div class="cm-cell" style="background:#eff6ff"><div class="cm-val" style="color:#1e40af">{{ result.confusion_matrix[1][1] }}</div><div class="cm-lbl" style="color:#1e40af">True Positive</div></div>
+    </div>
+  </div>
+
+  <!-- Feature importance -->
+  <div class="card" style="padding:22px">
+    <div style="margin-bottom:18px"><div class="ct">Feature Importance</div><div class="cs">Top predictors from Random Forest</div></div>
+    {% for feat,imp in result.feature_importance.items() %}
+    <div class="fi-row">
+      <div class="fi-lbl">{{ feat }}</div>
+      <div class="fi-bar"><div class="fi-fill" style="width:{{ imp / (result.feature_importance.values()|list|max) * 100 }}%"></div></div>
+      <div class="fi-val">{{ imp }}%</div>
+    </div>
+    {% endfor %}
+
+    <!-- Risk distribution chart -->
+    <div style="margin-top:20px;margin-bottom:8px"><div class="ct" style="font-size:13px">Risk Score Distribution</div></div>
+    <canvas id="riskHist" style="max-height:120px"></canvas>
+  </div>
+</div>
+{% endif %}
+
+<!-- CHURN TABLE -->
+<div class="card">
+  <div class="ch">
+    <div><div class="ct">Customers Predicted to Churn</div><div class="cs">Sorted by probability — top 60 shown</div></div>
+    <div style="display:flex;gap:8px">
+      <span class="plain-chip" style="background:#fef2f2;color:var(--bad2);font-weight:700;font-size:12px">{{ result.churn_count }} Total</span>
+      <span class="plain-chip" style="background:var(--br2);color:var(--t2);font-weight:700;font-size:12px">High: {{ result.high_risk }}</span>
+    </div>
+  </div>
+  <div class="tw">
+    <table>
+      <thead><tr><th>#</th><th>Customer ID</th><th>Tenure</th><th>Plan</th><th>Contract</th><th>Charges/mo</th><th>Complaints</th><th>Probability</th><th>Risk</th><th>Action</th></tr></thead>
+      <tbody>
+      {% for c in result.customers %}
+      <tr>
+        <td style="color:var(--t3);font-size:12px" class="mono">{{ loop.index }}</td>
+        <td class="mono" style="font-weight:600">{{ c.id }}</td>
+        <td class="mono">{{ c.tenure }} mo</td>
+        <td>{{ c.plan }}</td>
+        <td style="font-size:12.5px">{{ c.contract }}</td>
+        <td class="mono">₹{{ "{:,.0f}".format(c.charges) }}</td>
+        <td class="mono">{{ c.complaints }}</td>
+        <td>
+          <div class="pr">
+            <div class="pt"><div class="pf" style="width:{{ c.probability }}%;background:{% if c.probability>70 %}#ef4444{% elif c.probability>40 %}#f59e0b{% else %}#10b981{% endif %}"></div></div>
+            <span class="pv" style="color:{% if c.probability>70 %}#ef4444{% elif c.probability>40 %}#f59e0b{% else %}#10b981{% endif %}">{{ c.probability }}%</span>
+          </div>
+        </td>
+        <td>
+          {% if c.risk=='High' %}<span class="chip rd">High</span>
+          {% elif c.risk=='Medium' %}<span class="chip yw">Medium</span>
+          {% else %}<span class="chip gr">Low</span>{% endif %}
+        </td>
+        <td>
+          {% if c.risk=='High' %}<button class="btn btn-sm btn-d">🔔 Contact</button>
+          {% else %}<button class="btn btn-sm btn-s">Follow Up</button>{% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}{% if result %}<script>
+const res={{ result|tojson }};
+mk('churnLine','line',{
+  labels:res.months,
+  datasets:[
+    {label:'Retained',data:res.retained_monthly,borderColor:C.gr,backgroundColor:C.gra,fill:true,tension:.45,borderWidth:2.5,pointRadius:3,pointHoverRadius:6},
+    {label:'Churned',data:res.churn_monthly,borderColor:C.rd,backgroundColor:C.rda,fill:true,tension:.45,borderWidth:2.5,pointRadius:3,pointHoverRadius:6}
+  ]
+},{plugins:{legend:{position:'top'}},scales:{y:{grid:{color:C.grid}},x:{grid:{display:false}}}});
+
+mk('churnDonut','doughnut',{
+  labels:['Retained','Churn'],
+  datasets:[{data:[res.retain_count,res.churn_count],backgroundColor:[C.gr,C.rd],borderWidth:0,hoverOffset:8}]
+},{cutout:'62%'});
+
+if(res.risk_hist_labels){
+  mk('riskHist','bar',{
+    labels:res.risk_hist_labels,
+    datasets:[{label:'Customers',data:res.risk_hist_vals,
+      backgroundColor:res.risk_hist_labels.map(l=>{const v=parseInt(l);return v>=70?C.rd:v>=40?C.yw:C.gr}),
+      borderRadius:4,borderSkipped:false}]
+  },{plugins:{legend:{display:false}},scales:{y:{grid:{color:C.grid},ticks:{font:{size:10}}},x:{grid:{display:false},ticks:{font:{size:10}}}}});
+}
+</script>{% endif %}{% endblock %}

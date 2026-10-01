@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}Reports{% endblock %}
+{% block page_name %}Report Center{% endblock %}
+{% block breadcrumb %}Analytics Reports{% endblock %}
+
+{% block content %}
+<div class="ph">
+  <div class="ph-title">Report Center</div>
+  <div class="ph-sub">Analytics summaries, model results and project documentation</div>
+</div>
+
+{% if not has_data %}<div class="al al-info mb20"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><div>Using sample data. <a href="/upload" style="color:var(--p);font-weight:700">Upload your dataset</a> for personalized reports.</div></div>{% endif %}
+
+<div class="g2 mb20">
+{% for name,color,bg,stroke_c,desc,date,link in [
+  ('Churn Prediction Report','#1d4ed8','#eff6ff','#2563eb','Full ensemble ML results — accuracy, AUC-ROC, precision/recall, confusion matrix, feature importance, and full churn customer list.','Apr 11, 2026','churn'),
+  ('Segmentation Report','#065f46','#ecfdf5','#10b981','K-Means cluster profiles with revenue, tenure, churn rates and targeted retention strategies for each of the 5 segments.','Apr 11, 2026','segmentation'),
+  ('Revenue Analytics','#92400e','#fffbeb','#f59e0b','Average monthly charges by plan and segment, ARPU trends, total charges distribution, and revenue-at-risk from churn.','Apr 10, 2026','dashboard'),
+  ('Customer Lifetime Value','#5b21b6','#f5f3ff','#7c3aed','CLV by cluster and contract type, identifying high-value customers and ROI-maximizing retention investment priorities.','Apr 9, 2026','dashboard')
+] %}
+<div class="card rc">
+  <div class="ri" style="background:{{ bg }}"><svg viewBox="0 0 24 24" stroke="{{ stroke_c }}"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+  <div class="rn">{{ name }}</div>
+  <div class="rd">{{ desc }}</div>
+  <div class="rf"><span class="rdate">{{ date }}</span><a href="/{{ link }}" class="btn btn-p btn-sm">View →</a></div>
+</div>
+{% endfor %}
+</div>
+
+<!-- KEY METRICS SUMMARY -->
+{% if stats %}
+<div class="g2 mb20">
+  <div class="card" style="padding:22px">
+    <div style="margin-bottom:16px"><div class="ct">Dataset Summary</div><div class="cs">From loaded data</div></div>
+    {% for label,val in [
+      ('Total Customers', stats.total|int),
+      ('Active Customers', stats.active|int),
+      ('Churned Customers', stats.churn_count|int),
+      ('Churn Rate', stats.churn_pct|string + '%'),
+      ('Avg Monthly Charges', '₹' + stats.avg_monthly|string),
+      ('Avg Customer Tenure', stats.avg_tenure|string + ' months'),
+    ] %}
+    <div class="mr"><span class="ml">{{ label }}</span><span class="mv mono">{{ val }}</span></div>
+    {% endfor %}
+  </div>
+  <div class="card" style="padding:22px">
+    <div style="margin-bottom:16px"><div class="ct">ML Model Configuration</div><div class="cs">Ensemble parameters</div></div>
+    {% for label,val in [
+      ('Churn Model','Voting Ensemble (Soft)'),
+      ('Estimators','GBM + RF + ExtraTrees'),
+      ('GBM Iterations','300 (lr=0.05)'),
+      ('RF Trees','300 (max_depth=10)'),
+      ('Class Balancing','Oversampling'),
+      ('Cross-Validation','5-Fold Stratified'),
+      ('Segmentation','K-Means (k=5)'),
+      ('Scaler','RobustScaler'),
+      ('Feature Engineering','Yes (+5 features)'),
+      ('Train/Test Split','80% / 20%'),
+    ] %}
+    <div class="mr"><span class="ml">{{ label }}</span><span class="mv mono" style="font-size:12px">{{ val }}</span></div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- TECH STACK -->
+<div class="card" style="padding:22px">
+  <div style="margin-bottom:16px"><div class="ct">Technology Stack</div><div class="cs">Built for DTI Final Project 2026</div></div>
+  <div style="display:flex;flex-wrap:wrap;gap:10px">
+    {% for tech,color in [
+      ('Python 3.11','#3b82f6'),('Flask 3.0','#6b7280'),
+      ('scikit-learn','#f97316'),('Gradient Boosting','#dc2626'),
+      ('Random Forest','#d97706'),('Extra Trees','#7c3aed'),
+      ('Pandas','#10b981'),('NumPy','#8b5cf6'),
+      ('K-Means Clustering','#059669'),('RobustScaler','#06b6d4'),
+      ('Feature Engineering','#1d4ed8'),('Cross-Validation','#0891b2'),
+      ('Chart.js','#ec4899'),('HTML5 + CSS3','#ef4444'),
+      ('Outfit Font','#475569'),('JetBrains Mono','#334155'),
+    ] %}
+    <span class="plain-chip" style="background:{{ color }}1a;color:{{ color }};font-size:12.5px;font-weight:600;padding:5px 14px;border-radius:20px">{{ tech }}</span>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
