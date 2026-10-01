@@ -1,29 +1,5 @@
 # TeleInsight v2 — Telecom Customer Analytics System
 ### DTI Final Project · Design Thinking & Innovation · 2026
-
----
-
-## 🚀 What's New in v2
-
-| Feature | v1 | v2 |
-|---------|----|----|
-| ML Model | Single Random Forest | **Ensemble: GBM + RF + ExtraTrees** |
-| Accuracy | ~72% | **90.0%** |
-| AUC-ROC | ~57% | **97.4%** |
-| F1 Score | ~39% | **89.5%** |
-| Cross-Validation | No | **5-Fold Stratified** |
-| Feature Engineering | Basic | **+5 engineered features** |
-| Class Balancing | No | **Oversampling** |
-| Dataset Size | 500 rows | **1,000 rows** |
-| UI Design | Standard | **Premium glassmorphism** |
-| Font | DM Sans | **Outfit + JetBrains Mono** |
-| Animated Counters | No | **Yes** |
-| Confusion Matrix | No | **Yes** |
-| Feature Importance | No | **Yes (visual bars)** |
-| Risk Histogram | No | **Yes** |
-
----
-
 ## ⚙️ Setup — 3 Steps
 
 ### Step 1 — Install Dependencies
